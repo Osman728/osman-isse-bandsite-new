@@ -1,0 +1,40 @@
+@use "./typograph" as *;
+@use "./mixins" as *;
+@use "./variable" as *;
+
+.hero {
+  background-image: linear-gradient(
+      to top,
+      rgba(50, 50, 50, 0.5),
+      rgba(50, 50, 50, 0.5)
+    ),
+    url("../assets/images/hero-bio.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 17.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+  width: 100%;
+
+  @include tablet {
+    padding: 0 2.25rem 0 2.25rem;
+    height: 29.375rem;
+  }
+  @include desktop {
+    @include desktop {
+      height: 75vh;
+      padding: 0 3.9375rem;
+    }
+  }
+
+  &__title {
+    @include section-header;
+    font-family: AvenirDemi;
+    color: $white;
+    @include tablet {
+      @include page-header-tab-desktop;
+    }
+  }
+}

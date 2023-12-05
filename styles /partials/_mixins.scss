@@ -1,0 +1,62 @@
+@use "./breakpoints" as *;
+@use "./typograph" as *;
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+//  mob font size //
+
+@mixin section-header {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@mixin subheader {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+
+@mixin bodycopy {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+}
+
+@mixin footercopy {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+}
+
+// tablet and deskptop//
+@mixin page-header-tab-desktop {
+  font-size: 3.75rem;
+  line-height: 4.25rem;
+}
+@mixin setion-header-tab-desktop {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+}
+
+@mixin subheader-tab-desktop {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@mixin bodycopy-tab-desktop {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+
+@mixin footercopy-tab-desktop {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+

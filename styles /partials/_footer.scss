@@ -1,0 +1,169 @@
+@use "./variable" as *;
+@use "./resets";
+@use "./breakpoints" as *;
+@use "./typograph" as *;
+@use "./mixins" as *;
+
+.footer {
+  background-color: $bandsite-black;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  color: $alabaster;
+  @include footercopy;
+  font-family: AvenirNormal;
+
+  @include tablet {
+    padding: 3rem 2.25rem;
+    @include footercopy-tab-desktop;
+  }
+  @include desktop {
+    padding: 3rem 3.9375rem;
+  }
+
+  &__header {
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__title {
+    @include section-header;
+    font-family: AvenirDemi;
+    color: $alabaster;
+    padding: 0 0 1rem 0;
+    margin: 0rem;
+    @include tablet {
+      @include setion-header-tab-desktop;
+      padding-bottom: 2.25rem;
+    }
+  }
+  &__socials {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-width: 7.5rem;
+    width: 30%;
+    @include tablet {
+      width: 17%;
+      padding: 0 0 1.7rem 3rem;
+    }
+    @include desktop {
+      width: 12%;
+      padding: 0 0 1.7rem 6.2rem;
+    }
+  }
+
+  &__social-icon {
+    img {
+      height: 1.5rem;
+      @include tablet {
+        height: 1.5rem;
+      }
+    }
+  }
+  &__header-img--tab {
+    display: none;
+    @include tablet {
+      display: flex;
+      height: 1.25rem;
+    }
+  }
+
+  &__header-img {
+    @include tablet {
+      padding: 0 0 1.5rem 14rem;
+    }
+    @include desktop {
+      padding: 0 0 1.5rem 39.2rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 3.7rem 0 0;
+    }
+    @include desktop {
+      padding: 0 29.7rem 0 0;
+    }
+  }
+
+  &__card {
+    padding-bottom: 1rem;
+    @include tablet {
+      padding-bottom: 2.25rem;
+    }
+  }
+
+  &__card--agent {
+    font-family: AvenirDemi;
+    padding-bottom: 1rem;
+    @include tablet {
+      padding-bottom: 2.25rem;
+    }
+  }
+
+  &__card--agent-name {
+    margin: 0;
+  }
+
+  &__card--agent-company {
+    margin: 0;
+  }
+
+  &__card--location {
+    font-family: AvenirNormal;
+    padding-bottom: 1rem;
+    @include tablet {
+      padding-bottom: 2.25rem;
+    }
+  }
+
+  &__card--location-address {
+    margin: 0;
+  }
+
+  &__card--email {
+    padding-bottom: 1rem;
+    @include tablet {
+      padding-bottom: 2.25rem;
+    }
+  }
+
+  &__card--email-link {
+    font-family: AvenirNormal;
+    text-decoration: none;
+    color: $alabaster;
+  }
+
+  &__logo-img {
+    height: 1.25rem;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__logo-img--mobile {
+    padding: 1.5rem 0 1rem 0;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__copyright {
+    font-family: AvenirNormal;
+    margin: 0;
+  }
+}
+

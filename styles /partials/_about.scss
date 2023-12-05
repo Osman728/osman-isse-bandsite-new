@@ -1,0 +1,121 @@
+@use "./resets";
+@use "./breakpoints" as *;
+@use "./typograph" as *;
+@use "./mixins" as *;
+@use "./variable" as *;
+
+.about {
+  padding: 0 1rem;
+  width: 100%;
+  @include tablet {
+    padding: 0 2.25rem;
+    width: 100%;
+  }
+  @include desktop {
+    padding: 0 3.9375rem;
+  }
+
+  &__title {
+    padding: 1.5rem 0 1rem 0;
+    @include section-header;
+    margin: 0;
+    font-family: AvenirDemi;
+    color: $bandsite-black;
+    @include tablet {
+      padding: 3rem 0 2.25rem 0;
+      @include setion-header-tab-desktop;
+    }
+
+    @include desktop {
+      padding: 3rem 0 2.25rem 0;
+      @include setion-header-tab-desktop;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    padding: 0 0 1rem 0;
+    margin: 0;
+    @include tablet {
+      width: 80%;
+      padding: 0px 0 2.25rem 3.5rem;
+    }
+    @include desktop {
+      width: 80%;
+      padding: 0px 0 2.25rem 5rem;
+    }
+  }
+  &__quote {
+    @include subheader;
+    padding: 0 0 1rem 0;
+    margin: 0;
+    font-family: AvenirDemi;
+    color: $bandsite-black;
+    @include tablet {
+      width: 80%;
+      padding: 0px 0 1.25rem 3.5rem;
+      @include subheader-tab-desktop;
+    }
+    @include desktop {
+      width: 56%;
+      padding: 0px 0 1.25rem 5rem;
+    }
+  }
+  &__author {
+    @include subheader;
+    padding: 0 0 1rem 0;
+    margin: 0;
+    font-family: Avenir;
+    color: $bandsite-black;
+    @include tablet {
+      width: 80%;
+      padding: 0px 0 2.25rem 3.5rem;
+      @include subheader-tab-desktop;
+    }
+    @include desktop {
+      width: 56%;
+      padding: 0px 0 1.25rem 5rem;
+    }
+  }
+
+  &__name {
+    @include subheader;
+    padding: 0 0 1rem 0;
+    margin: 0;
+    font-family: AvenirDemi;
+    color: $bandsite-black;
+    @include tablet {
+      width: 80%;
+      padding: 0px 0 2.25rem 3.5rem;
+      @include subheader-tab-desktop;
+    }
+    @include desktop {
+      width: 56%;
+      padding: 0px 0 1.25rem 5rem;
+    }
+  }
+  &__container {
+    @include tablet {
+      display: flex;
+      gap: 1.2rem;
+    }
+  }
+
+  &__container--text {
+    @include bodycopy;
+    padding: 0 0 1rem 0;
+    margin: 0;
+    font-family: AvenirNormal;
+    color: $bandsite-black;
+    @include tablet {
+      width: 35.54%;
+      padding: 0px 0 2.25rem 3.5rem;
+      @include bodycopy-tab-desktop;
+    }
+
+    @include desktop {
+      width: 36.2%;
+      padding: 0px 0 1.25rem 5rem;
+    }
+  }
+}
