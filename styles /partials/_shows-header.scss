@@ -12,45 +12,44 @@
   width: 110%;
   font-family: AvenirNormal;
   @include tablet {
-  width: 106.3%;
-  padding: 1.5rem 0 0 1.5rem;
-  flex-direction: row;
+    width: 106.27%;
+    padding: 1.5rem 0 0 1.5rem;
+    flex-direction: row;
   }
   @include desktop {
     width: 107.95%;
-   
-    }
+  }
 
   &__container-1 {
-  display: flex;
-  justify-content: center;
-  @include tablet {
-  margin-right: 4rem;
+    display: flex;
+    justify-content: center;
+    @include tablet {
+      margin-right: 4rem;
     }
   }
   &__container-2 {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-   @include tablet {
-  width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    @include tablet {
+      width: 20%;
     }
   }
- &__button-container {
+  &__button-container {
     width: 50%;
 
-  @include tablet {
-  width: 28%;
+    @include tablet {
+      width: 28%;
     }
   }
   &__show {
-   border-bottom: 3px solid $primarycolor-3;
+    border-bottom: 3px solid $primarycolor-3;
   }
 
   &__bio {
     color: $secondarycolor-2;
     @include tablet {
-    padding-left: 3rem;
+      padding-right: 3rem;
     }
   }
   &__bio:hover {
@@ -61,8 +60,8 @@
     justify-content: space-around;
     padding: 0 0 0 1rem;
     @include tablet {
-    padding-inline-start: 0rem;
-    justify-content: flex-start;
+      padding-inline-start: 0rem;
+      justify-content: flex-start;
     }
   }
   &__image {
@@ -70,8 +69,8 @@
     width: 7rem;
     padding-top: 1rem;
     @include tablet {
-    padding-top: 0.5rem;
-    margin-bottom: 1.5rem;
+      padding-top: 0.5rem;
+      margin-bottom: 1.5rem;
     }
   }
 

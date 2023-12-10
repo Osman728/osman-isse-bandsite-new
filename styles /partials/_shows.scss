@@ -13,6 +13,7 @@
   }
   @include desktop {
     padding: 0 3.9375rem;
+    display: flex;
   }
   &__title {
     padding: 1.5rem 1rem 0rem 1rem;
@@ -35,6 +36,9 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+    @include tablet {
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__info-day,
@@ -67,6 +71,14 @@
     &.selected {
       background-color: $secondarycolor-2;
     }
+    @include tablet {
+      display: flex;
+      width: 100%;
+      align-items: center;
+    }
+    @include desktop {
+      width: 166%;
+    }
   }
   &__info-date,
   &__info-Venus,
@@ -75,6 +87,9 @@
     font-family: AvenirDemi;
     color: $primarycolor-2;
     padding-top: 1rem;
+    @include tablet {
+      display: none;
+    }
   }
   &__info-day,
   &__info-Venusname,
@@ -102,6 +117,49 @@
     &:hover {
       background-color: $secondarycolor-1;
       color: $primarycolor-3;
+    }
+  }
+
+  &__info-day,
+  &__info-Venusname,
+  &__info-locationplace,
+  &__info-buyticket {
+    @include tablet {
+      display: flex;
+      width: 25%;
+    }
+  }
+
+  &__wrapper {
+    display: none;
+    @include tablet {
+      display: flex;
+      width: 62%;
+      justify-content: space-between;
+    }
+    @include desktop {
+      width: 101%;
+    }
+  }
+  .date {
+    margin-left: 1rem;
+  }
+  .location {
+    margin-right: 1.6rem;
+    @include desktop {
+      margin-right: 2rem;
+    }
+  }
+  .date,
+  .location,
+  .venue {
+    @include subheader;
+    font-family: AvenirDemi;
+    color: $primarycolor-2;
+  }
+  &__wrapper-dp {
+    @include desktop {
+      margin: 3.9375rem 0 0 12.9375rem;
     }
   }
 }

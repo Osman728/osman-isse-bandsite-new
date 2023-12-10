@@ -12,20 +12,19 @@
   width: 110%;
   font-family: AvenirNormal;
   @include tablet {
-  width: 106.3%;
-  padding: 1.5rem 0 0 1.5rem;
-  flex-direction: row;
+    width: 106.3%;
+    padding: 1.5rem 0 0 1.5rem;
+    flex-direction: row;
   }
   @include desktop {
     width: 107.95%;
-   
-    }
+  }
 
   &__container-1 {
-  display: flex;
-  justify-content: center;
-  @include tablet {
-   margin-right: 4rem;
+    display: flex;
+    justify-content: center;
+    @include tablet {
+      margin-right: 4rem;
     }
   }
   &__container-2 {

@@ -20,6 +20,18 @@
   width: 100%;
   padding: 0 1rem;
 
+  @include tablet {
+    padding: 0 2.25rem 0 2.25rem;
+    height: 29.375rem;
+    width: 100%;
+  }
+  @include desktop {
+    @include desktop {
+      height: 75vh;
+      padding: 0 3.9375rem;
+    }
+  }
+
   &__title {
     color: $primarycolor-3;
     font-weight: 400;
@@ -28,6 +40,10 @@
     line-height: 2rem;
     font-family: AvenirNormal;
     color: $primarycolor-3;
+    @include tablet {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
   }
 
   &__title-sub {
@@ -40,8 +56,10 @@
     font-family: AvenirDemi;
     color: $primarycolor-3;
     @include tablet {
+      @include section-header;
       font-size: 3.5rem;
-      word-spacing: 0.7rem;
+      line-height: 4rem;
+      width: 76%;
     }
 
     &__container {
@@ -63,5 +81,9 @@
     border: none;
     margin: 1rem 0;
     height: 6rem;
+    @include tablet {
+      padding-top: 2.25rem;
+      width: 50%;
+    }
   }
 }
