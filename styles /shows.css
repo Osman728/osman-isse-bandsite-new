@@ -308,12 +308,20 @@ body {
   color: #ffffff;
   font-weight: 400;
   margin: 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: AvenirNormal;
+  color: #ffffff;
 }
 .hero__title-sub {
   margin-top: 1rem;
   color: #ffffff;
   margin-bottom: 0rem;
-  width: 69%;
+  width: 87%;
+  font-size: 1.9rem;
+  line-height: 2rem;
+  font-family: AvenirDemi;
+  color: #ffffff;
 }
 @media screen and (min-width: 48rem) {
   .hero__title-sub {
@@ -437,8 +445,4 @@ body {
 .shows__info-buyticket:hover {
   background-color: #000000;
   color: #ffffff;
-}
-.shows__selected {
-  background-color: black;
-  color: red;
 }/*# sourceMappingURL=shows.css.map */
