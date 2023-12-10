@@ -580,6 +580,12 @@ body {
   width: 100%;
   font-family: AvenirNormal;
 }
+@media screen and (min-width: 48rem) {
+  .Conversation {
+    padding: 0 2.25rem;
+    width: 100%;
+  }
+}
 .Conversation__title {
   padding: 1.5rem 0 1rem 0;
   font-size: 1.5rem;
@@ -588,22 +594,55 @@ body {
   font-family: AvenirDemi;
   color: #323232;
 }
+@media screen and (min-width: 48rem) {
+  .Conversation__title {
+    padding: 3rem 0 2.25rem 0;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
 .Conversation__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+@media screen and (min-width: 48rem) {
+  .Conversation__container {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .Conversation__profile {
+    display: flex;
+    width: 17%;
+    justify-content: flex-end;
+  }
+}
 .Conversation__profile-image {
+  margin-top: 1.7rem;
+  margin-right: 1rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
   width: 36px;
   height: 36px;
 }
+@media screen and (min-width: 48rem) {
+  .Conversation__profile-image {
+    width: 48px;
+    height: 48px;
+  }
+}
 .Conversation__form {
   display: flex;
   flex-direction: column;
   width: 85%;
+}
+@media screen and (min-width: 48rem) {
+  .Conversation__form {
+    width: 73%;
+    margin-right: 6rem;
+  }
 }
 .Conversation__name {
   display: flex;
@@ -623,6 +662,12 @@ body {
   padding-left: 0.75rem;
   margin-bottom: 1rem;
   background-color: #fafafa;
+}
+@media screen and (min-width: 48rem) {
+  .Conversation__name-input {
+    height: 3rem;
+    padding-left: 1rem;
+  }
 }
 .Conversation__comment {
   display: flex;
@@ -648,6 +693,11 @@ body {
   resize: none;
   color: #323232;
 }
+@media screen and (min-width: 48rem) {
+  .Conversation__comment-text {
+    padding: 1rem;
+  }
+}
 .Conversation__name-input, .Conversation__comment-text {
   border: 1px solid #e1e1e1;
 }
@@ -662,6 +712,13 @@ body {
 }
 .Conversation__button {
   display: flex;
+}
+@media screen and (min-width: 48rem) {
+  .Conversation__button {
+    height: 3.6rem;
+    width: 100%;
+    justify-content: flex-end;
+  }
 }
 .Conversation__button-sub {
   font-size: 0.875rem;
@@ -680,9 +737,24 @@ body {
   background-color: #000000;
   color: #ffffff;
 }
+@media screen and (min-width: 48rem) {
+  .Conversation__button-sub {
+    width: 33%;
+    height: 3.2rem;
+    min-width: 150px;
+    padding: 8px 16px;
+  }
+}
 
 .comment {
   padding: 1.5rem 0 1rem 0;
+}
+@media screen and (min-width: 48rem) {
+  .comment {
+    width: 78.2%;
+    margin-left: 4.5rem;
+    padding: 3rem 0 2.25rem 0;
+  }
 }
 .comment__section {
   display: flex;
@@ -690,6 +762,11 @@ body {
   padding: 1.5rem 0 1rem 0;
   border-top: 0.5px solid #e1e1e1;
   border-bottom: 0.5px solid #e1e1e1;
+}
+@media screen and (min-width: 48rem) {
+  .comment__section {
+    padding: 1.5rem 0 2.25rem 0;
+  }
 }
 .comment__avartar {
   padding-right: 1rem;
@@ -699,6 +776,12 @@ body {
   height: 36px;
   border-radius: 50%;
   background-color: #e1e1e1;
+}
+@media screen and (min-width: 48rem) {
+  .comment__avartar-img {
+    width: 48px;
+    height: 48px;
+  }
 }
 .comment__container {
   display: flex;
@@ -714,7 +797,7 @@ body {
   font-size: 0.875rem;
   line-height: 1.375rem;
   font-family: AvenirDemi;
-  color: primarycolor-1;
+  color: #000000;
   margin: 0;
 }
 .comment__info-date {
@@ -726,8 +809,19 @@ body {
 .comment__usertext {
   padding-top: 1rem;
 }
+@media screen and (min-width: 48rem) {
+  .comment__usertext {
+    padding-top: 0.5rem;
+  }
+}
 .comment__usertext-post {
   font-size: 0.8125rem;
   line-height: 1.125rem;
   margin: 0;
+}
+@media screen and (min-width: 48rem) {
+  .comment__usertext-post {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
 }/*# sourceMappingURL=bio.css.map */
