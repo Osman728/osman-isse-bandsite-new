@@ -1,63 +1,90 @@
-@use"./variable" as *;
+@use "./variable" as *;
+@use "./resets";
+@use "./breakpoints" as *;
 @use "./typograph" as *;
 @use "./mixins" as *;
 .navbar {
-    display: flex;
-    flex-direction: column;
-    background: $primarycolor-1; 
-    color:$primarycolor-3;
-    padding: 1rem 0 0 0;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: $primarycolor-1;
+  color: $primarycolor-3;
+  padding: 1rem 0 0 0;
+  width: 110%;
+  font-family: AvenirNormal;
+  @include tablet {
+  width: 106.3%;
+  padding: 1.5rem 0 0 1.5rem;
+  flex-direction: row;
+  }
+  @include desktop {
+    width: 107.95%;
    
-    
-    &__container-1 {
-      display: flex;
-      justify-content: center;
-      
     }
-    &__container-2 {
-      display: flex;
-      justify-content: space-evenly;
-      width: 100%;
-     
-    }
-    &__button-container {
-      width: 50%;
-    }
-    &__bio {
-    
-      
-    }
-    &__bio:hover {
-      background: $secondarycolor-1;
-    }
-    &__show {
-        border-bottom: 3px solid $primarycolor-2;
-    }
-    &__show:hover {
-      background: $secondarycolor-1;
-      
-    }
-    &__list {
-      display: flex;
-      justify-content: space-around;
-      padding: 0 0 0 1rem;
-      
-     
-    }
-    &__image {
-      height: 2rem;
-      width: 7rem;
-      padding-top: 1rem;
-     
-    }
-  
-    &__list-item{
-      list-style: none;
-    }
-  
-    &__links {
-      text-decoration: none;
-      color:  $primarycolor-2;
+
+  &__container-1 {
+  display: flex;
+  justify-content: center;
+  @include tablet {
+  margin-right: 4rem;
     }
   }
+  &__container-2 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+   @include tablet {
+  width: 20%;
+    }
+  }
+ &__button-container {
+    width: 50%;
+
+  @include tablet {
+  width: 28%;
+    }
+  }
+  &__show {
+   border-bottom: 3px solid $primarycolor-3;
+  }
+
+  &__bio {
+    color: $secondarycolor-2;
+    @include tablet {
+    padding-left: 3rem;
+    }
+  }
+  &__bio:hover {
+    border-bottom: 3px solid $primarycolor-3;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 0 1rem;
+    @include tablet {
+    padding-inline-start: 0rem;
+    justify-content: flex-start;
+    }
+  }
+  &__image {
+    height: 2rem;
+    width: 7rem;
+    padding-top: 1rem;
+    @include tablet {
+    padding-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    }
+  }
+
+  &__list-item {
+    list-style: none;
+  }
+
+  &__links-show {
+    text-decoration: none;
+    color: $primarycolor-3;
+  }
+  &__links-bio {
+    text-decoration: none;
+    color: $secondarycolor-2;
+  }
+}

@@ -1,0 +1,115 @@
+@use "./variable" as *;
+@use "./resets";
+@use "./breakpoints" as *;
+@use "./typograph" as *;
+@use "./mixins" as *;
+
+
+.shows{
+    font-family: AvenirNormal;
+    width: 100%;
+    @include tablet {
+      padding: 0 2.25rem;
+      width: 100%;
+    }
+    @include desktop {
+      padding: 0 3.9375rem;
+    }
+    &__title{
+        
+    padding: 1.5rem 1rem 0rem 1rem;
+    @include section-header;
+    margin: 0;
+    font-family: AvenirDemi;
+    color: $primarycolor-1;
+    @include tablet {
+      padding: 3rem 0 2.25rem 0;
+      @include setion-header-tab-desktop;
+    }
+
+    @include desktop {
+      padding: 3rem 0 2.25rem 0;
+      @include setion-header-tab-desktop;
+    }
+  }
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+  }
+  
+  &__info-day,
+  &__info-Venusname,
+  &__info-buyticket,&__info-locationplace
+  {
+    padding:1.5rem 0 1rem 0;
+}
+&__info-date,
+&__info-day,
+&__info-Venus,
+&__info-Venusname,
+&__info-location,
+&__info-locationplace,
+&__info-buyticket {
+  margin: 0;
+  padding: 0 1rem;
+}
+&__info-day,&__info-Venusname,&__info-locationplace{
+    padding-top: 0.5rem;
+    
+  }
+&__info
+{ border-bottom: 1px solid $secondarycolor-2;
+    width: 110%;
+    &:hover {
+        background-color:$secondarycolor-3;
+    }
+    &.selected {
+        background-color:$secondarycolor-2;
+        
+      }
+
+}
+  &__info-date, &__info-Venus, &__info-location{
+    @include subheader;
+    font-family: AvenirDemi;
+    color: $primarycolor-2;
+    padding-top:1rem;
+
+  }
+  &__info-day, &__info-Venusname, &__info-locationplace{
+    @include bodycopy;
+    font-family: AvenirNormal;
+    color: $primarycolor-1;
+
+  }
+  &__info-day{
+    font-family: AvenirDemi;
+  }
+
+  &__info-buyticket{
+    @include subheader;
+    height: 40px;
+    border-radius: 4px;
+    width: 90%;
+    background-color: $primarycolor-1;
+    color: $primarycolor-3;
+    border: 2px solid $primarycolor-1;
+    margin:1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 12px;
+    &:hover {
+    background-color: $secondarycolor-1;
+    color: $primarycolor-3;
+    
+    }
+    
+  }
+  &__selected {
+    background-color: black;
+    color: red;
+  }
+    }

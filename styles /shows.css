@@ -25,45 +25,94 @@ body {
   background: #323232;
   color: #ffffff;
   padding: 1rem 0 0 0;
-  width: 100%;
+  width: 110%;
+  font-family: AvenirNormal;
+}
+@media screen and (min-width: 48rem) {
+  .navbar {
+    width: 106.3%;
+    padding: 1.5rem 0 0 1.5rem;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .navbar {
+    width: 107.95%;
+  }
 }
 .navbar__container-1 {
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 48rem) {
+  .navbar__container-1 {
+    margin-right: 4rem;
+  }
 }
 .navbar__container-2 {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
 }
+@media screen and (min-width: 48rem) {
+  .navbar__container-2 {
+    width: 20%;
+  }
+}
 .navbar__button-container {
   width: 50%;
 }
-.navbar__bio:hover {
-  background: #000000;
+@media screen and (min-width: 48rem) {
+  .navbar__button-container {
+    width: 28%;
+  }
 }
 .navbar__show {
-  border-bottom: 3px solid #afafaf;
+  border-bottom: 3px solid #ffffff;
 }
-.navbar__show:hover {
-  background: #000000;
+.navbar__bio {
+  color: #e1e1e1;
+}
+@media screen and (min-width: 48rem) {
+  .navbar__bio {
+    padding-left: 3rem;
+  }
+}
+.navbar__bio:hover {
+  border-bottom: 3px solid #ffffff;
 }
 .navbar__list {
   display: flex;
   justify-content: space-around;
   padding: 0 0 0 1rem;
 }
+@media screen and (min-width: 48rem) {
+  .navbar__list {
+    padding-inline-start: 0rem;
+    justify-content: flex-start;
+  }
+}
 .navbar__image {
   height: 2rem;
   width: 7rem;
   padding-top: 1rem;
 }
+@media screen and (min-width: 48rem) {
+  .navbar__image {
+    padding-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
 .navbar__list-item {
   list-style: none;
 }
-.navbar__links {
+.navbar__links-show {
   text-decoration: none;
-  color: #afafaf;
+  color: #ffffff;
+}
+.navbar__links-bio {
+  text-decoration: none;
+  color: #e1e1e1;
 }
 
 .footer {
@@ -253,8 +302,143 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
+  padding: 0 1rem;
 }
 .hero__title {
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0;
+}
+.hero__title-sub {
+  margin-top: 1rem;
+  color: #ffffff;
+  margin-bottom: 0rem;
+  width: 69%;
+}
+@media screen and (min-width: 48rem) {
+  .hero__title-sub {
+    font-size: 3.5rem;
+    word-spacing: 0.7rem;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .hero__title-sub__container {
+    width: 100%;
+    max-width: 31.9rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .hero__title-sub__container {
+    width: 48%;
+    max-width: 44rem;
+    margin-right: 1.9rem;
+  }
+}
+.hero__soundcloud {
+  padding: 0rem;
+  width: 100%;
+  border: none;
+  margin: 1rem 0;
+  height: 6rem;
+}
+
+.shows {
+  font-family: AvenirNormal;
+  width: 100%;
+}
+@media screen and (min-width: 48rem) {
+  .shows {
+    padding: 0 2.25rem;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .shows {
+    padding: 0 3.9375rem;
+  }
+}
+.shows__title {
+  padding: 1.5rem 1rem 0rem 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 0;
+  font-family: AvenirDemi;
+  color: #323232;
+}
+@media screen and (min-width: 48rem) {
+  .shows__title {
+    padding: 3rem 0 2.25rem 0;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .shows__title {
+    padding: 3rem 0 2.25rem 0;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+.shows__container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1rem;
+}
+.shows__info-day, .shows__info-Venusname, .shows__info-buyticket, .shows__info-locationplace {
+  padding: 1.5rem 0 1rem 0;
+}
+.shows__info-date, .shows__info-day, .shows__info-Venus, .shows__info-Venusname, .shows__info-location, .shows__info-locationplace, .shows__info-buyticket {
+  margin: 0;
+  padding: 0 1rem;
+}
+.shows__info-day, .shows__info-Venusname, .shows__info-locationplace {
+  padding-top: 0.5rem;
+}
+.shows__info {
+  border-bottom: 1px solid #e1e1e1;
+  width: 110%;
+}
+.shows__info:hover {
+  background-color: #fafafa;
+}
+.shows__info.selected {
+  background-color: #e1e1e1;
+}
+.shows__info-date, .shows__info-Venus, .shows__info-location {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-family: AvenirDemi;
+  color: #afafaf;
+  padding-top: 1rem;
+}
+.shows__info-day, .shows__info-Venusname, .shows__info-locationplace {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-family: AvenirNormal;
+  color: #323232;
+}
+.shows__info-day {
+  font-family: AvenirDemi;
+}
+.shows__info-buyticket {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  height: 40px;
+  border-radius: 4px;
+  width: 90%;
+  background-color: #323232;
+  color: #ffffff;
+  border: 2px solid #323232;
+  margin: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 12px;
+}
+.shows__info-buyticket:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.shows__selected {
+  background-color: black;
+  color: red;
 }/*# sourceMappingURL=shows.css.map */
