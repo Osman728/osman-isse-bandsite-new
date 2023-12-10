@@ -7,7 +7,7 @@
 .gallery {
   width: 100%;
   padding: 0 1rem;
-  background-color: $alabaster;
+  background-color: $secondarycolor-3;
   @include tablet {
     padding: 0 2.25rem;
   }
@@ -19,7 +19,7 @@
     margin: 0;
     @include section-header;
     font-family: AvenirDemi;
-    color: $bandsite-black;
+    color: $primarycolor-1;
     @include tablet {
       padding: 3rem 0 2.25rem 0;
       @include setion-header-tab-desktop;

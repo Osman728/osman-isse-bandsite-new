@@ -4,5 +4,168 @@
 @use "./typograph" as *;
 @use "./mixins" as *;
 
+.Conversation {
+  padding: 0 1rem;
+  width: 100%;
+  font-family: AvenirNormal;
+  &__title {
+    padding: 1.5rem 0 1rem 0;
+    @include section-header;
+    margin: 0;
+    font-family: AvenirDemi;
+    color: $primarycolor-1;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__profile {
+  }
+  &__profile-image {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+  }
 
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
 
+  &__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__name-label {
+    @include subheader;
+    font-family: AvenirDemi;
+
+    margin-bottom: 4px;
+    color: $primarycolor-2;
+  }
+  &__name-input {
+    height: 2.25rem;
+
+    border-radius: 4px;
+
+    padding-left: 0.75rem;
+    margin-bottom: 1rem;
+    background-color: $secondarycolor-3;
+  }
+
+  &__comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 12px;
+  }
+
+  &__comment-label {
+    @include subheader;
+    font-family: AvenirDemi;
+    margin-bottom: 4px;
+    color: $primarycolor-2;
+  }
+  &__comment-text {
+    @include bodycopy;
+    background-color: $secondarycolor-3;
+    border-radius: 4px;
+    height: 5.25rem;
+    padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+    margin-bottom: 1rem;
+    resize: none;
+    color: $primarycolor-1;
+  }
+
+  &__name-input,
+  &__comment-text {
+    border: 1px solid $secondarycolor-2;
+
+    &:active {
+      border: 1px solid $secondarycolor-1;
+    }
+  }
+  &__name-input::placeholder,
+  &__comment-text::placeholder {
+    color: $primarycolor-1;
+  }
+  &__button {
+    display: flex;
+  }
+
+  &__button-sub {
+    @include subheader;
+    margin-top: 4px;
+    height: 40px;
+    border-radius: 4px;
+    width: 100%;
+    background-color: $primarycolor-1;
+    color: $primarycolor-3;
+    border: 2px solid $primarycolor-1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $secondarycolor-1;
+      color: $primarycolor-3;
+    }
+  }
+}
+.comment {
+  padding: 1.5rem 0 1rem 0;
+
+  &__section {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 0 1rem 0;
+    border-top: 0.5px solid $secondarycolor-2;
+    border-bottom: 0.5px solid$secondarycolor-2;
+  }
+  &__avartar {
+    padding-right: 1rem;
+  }
+
+  &__avartar-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: $secondarycolor-2;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info-name {
+    @include subheader;
+    font-family: AvenirDemi;
+
+    color: primarycolor-1;
+
+    margin: 0;
+  }
+  &__info-date {
+    @include subheader;
+    color: $primarycolor-2;
+    margin: 0;
+  }
+  &__usertext {
+    padding-top: 1rem;
+  }
+  &__usertext-post {
+    @include bodycopy;
+    margin: 0;
+  }
+}

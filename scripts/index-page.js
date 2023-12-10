@@ -78,8 +78,7 @@ const formEl= document.querySelector(".Conversation__form");
 const handleSubmit = (event) => {
     event.preventDefault();
 
-    const name = event.target.name.value;
-    const commentText = event.target.comment.value;
+   
 
    
      
@@ -87,7 +86,7 @@ const handleSubmit = (event) => {
   const newComments = {
         name: event.target.name.value,
         comment: event.target.comment.value,
-        date:new Date().toLocaleDateString("en-Uk")
+        date:new Date().toLocaleDateString("en-Us"),
     
         
     };

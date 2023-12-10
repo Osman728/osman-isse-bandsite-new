@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bandsite</title>
     <link rel="stylesheet" href="./styles /bio.css" />
+    <script src="./scripts/index-page.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -15,18 +16,12 @@
         </a>
 
         <nav class="navbar__menu">
-        
-          <a class="navbar__menu--item active" href="./index.html"
-            >Biography</a
-          >
-        
-          <a href="#" class="navbar_menu--item inactive"
-            >Shows</a
-          >
-       
+          <a class="navbar__menu--item active" href="./index.html">Biography</a>
+
+          <a href="#" class="navbar_menu--item inactive">Shows</a>
         </nav>
       </div>
-      </header>
+    </header>
     <main>
       <!-- Hero -->
       <section class="hero">
@@ -126,36 +121,53 @@
           />
         </div>
       </section>
-      
+
       <section class="Conversation">
-        <h2 class="Converstation__title">Join the Conversation</h2>
-        
-        <div class="Conversation__contanter">
+        <h2 class="Conversation__title">Join the Conversation</h2>
 
-          <div  class="Conversation__profile">
-          <img src="./assets/images/Mohan-muruge.jpg" alt="Profile picture" class="Conversation__profile-image">
-          </div>
-        
-        <form class="Conversation__form"> 
-
-          <div class="Conversation__name">
-          <label class="Conversation__name-label" for="Name" >NAME</label>
-          <input  class="Conversation__name-input" type="text" id="Name" name="Name" placeholder="Enter your name">
+        <div class="Conversation__container">
+          <div class="Conversation__profile">
+            <img
+              src="./assets/images/Mohan-muruge.jpg"
+              alt="Profile picture"
+              class="Conversation__profile-image"
+            />
           </div>
 
-           <div  class="Conversation__comment">
-          <label  class="Conversation__name-label" for="comment">COMMENT</label>
-          <textarea  class="Conversation__name-text" name="comment" id="comment" placeholder="Add a new comment"></textarea>
-          </div>
-      
-          <div  class="Conversation__button">
-          <button  class="Conversation__button-sub" type="submit">COMMENT</button>
-          </div>
+          <form class="Conversation__form" >
+            <div class="Conversation__name">
+              <label class="Conversation__name-label" for="name">NAME</label>
+              <input
+                class="Conversation__name-input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+              />
+            </div>
 
-        </form>
+            <div class="Conversation__comment">
+              <label class="Conversation__comment-label" for="comment"
+                >COMMENT</label
+              >
+              <textarea
+                class="Conversation__comment-text"
+                name="comment"
+                id="comment"
+                placeholder="Add a new comment"
+              ></textarea>
+            </div>
+
+            <div class="Conversation__button">
+              <button class="Conversation__button-sub" type="submit">
+                COMMENT
+              </button>
+            </div>
+          </form>
         </div>
-
-
+        <div class="comment">
+          <!-- Display commment here -->
+        </div>
       </section>
     </main>
     <!-- Footer -->

@@ -1,0 +1,63 @@
+@use"./variable" as *;
+@use "./typograph" as *;
+@use "./mixins" as *;
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background: $primarycolor-1; 
+    color:$primarycolor-3;
+    padding: 1rem 0 0 0;
+    width: 100%;
+   
+    
+    &__container-1 {
+      display: flex;
+      justify-content: center;
+      
+    }
+    &__container-2 {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+     
+    }
+    &__button-container {
+      width: 50%;
+    }
+    &__bio {
+    
+      
+    }
+    &__bio:hover {
+      background: $secondarycolor-1;
+    }
+    &__show {
+        border-bottom: 3px solid $primarycolor-2;
+    }
+    &__show:hover {
+      background: $secondarycolor-1;
+      
+    }
+    &__list {
+      display: flex;
+      justify-content: space-around;
+      padding: 0 0 0 1rem;
+      
+     
+    }
+    &__image {
+      height: 2rem;
+      width: 7rem;
+      padding-top: 1rem;
+     
+    }
+  
+    &__list-item{
+      list-style: none;
+    }
+  
+    &__links {
+      text-decoration: none;
+      color:  $primarycolor-2;
+    }
+  }

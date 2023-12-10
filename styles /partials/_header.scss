@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: $bandsite-black;
+  background: $primarycolor-1;
   width: 100%;
 padding: 0 1rem;
 
@@ -44,7 +44,7 @@ padding: 0 1rem;
     list-style: none;
      height: 100%;
     text-align: center;
-    color: $white;
+    color: $primarycolor-3;
    
      
     
@@ -64,9 +64,9 @@ padding: 0 1rem;
   }
 }
 .active {
-  border-bottom: 4px solid white;
+  border-bottom: 4px solid $primarycolor-3;
   text-decoration: none;
-  color: $white;
+  color:$primarycolor-3;
   padding-bottom: 1rem;
   text-align: center; 
   
@@ -77,12 +77,12 @@ padding: 0 1rem;
 }
 .inactive {
   text-decoration: none;
-  color: $mercury;
+  color: $secondarycolor-2;
   padding-bottom: 1rem;
   border-bottom: 4px solid none;
   transition: border 0.2s ease-out;
   &:hover {
-    border-bottom: 4px solid white;
+    border-bottom: 4px solid ;
   }
   @include tablet {
     padding-bottom: 2.4rem;
@@ -98,17 +98,17 @@ padding: 0 1rem;
 
   &--anchor {
     font-size: 1rem;
-    border-bottom: 5px solid $bandsite-black;
+    border-bottom: 5px solid $primarycolor-1;
     width: 50%;
     display: flex;
     justify-content: center;
     padding: 1rem;
-    color: $mercury;
+    color:$secondarycolor-2;
     text-decoration: none;
   }
 
   &--anchor:hover {
-    border-bottom: 4px solid $white;
+    border-bottom: 4px solid $primarycolor-3;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -121,8 +121,8 @@ padding: 0 1rem;
 
 
 .current {
-  color: $white;
-  border-bottom: 4px solid $white;
+  color: $primarycolor-3;
+  border-bottom: 4px solid $primarycolor-3;
   width: 50%;
   display: flex;
   justify-content: center;
