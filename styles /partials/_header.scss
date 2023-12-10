@@ -1,140 +1,90 @@
 @use "./variable" as *;
+@use "./resets";
+@use "./breakpoints" as *;
 @use "./typograph" as *;
 @use "./mixins" as *;
-
-.navbar{
+.navbar {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background: $primarycolor-1;
-  width: 100%;
-padding: 0 1rem;
-
-  @include tablet {
-    display: flex;
-    flex-direction: row;
-    padding: 0 1rem;
-    align-items: center;
-    width: 100%;
-   padding: 0 2.25rem;
-  }
-
-  @include desktop {
-    padding: 0 5.25rem;
-  }
-
-  &__logo {
-    height: 1.25rem;
-    width: 7.5rem;
-    padding: 1rem 0;
-    flex: 1;
-    @include tablet {
-      padding: 3rem 2.25rem 2.25rem;
-      flex:0;
-    }
-  }
- 
-
- 
-  &__menu {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-    text-align: center;
-    list-style: none;
-     height: 100%;
-    text-align: center;
-    color: $primarycolor-3;
-   
-     
-    
-    @include tablet {
-      display: block;
-    }
-    &--item {
-      
-      @include tablet {
-        width: fit-content;
-        margin: 0 1.5rem;
-        
-        
-        
-      }
-    }
-  }
-}
-.active {
-  border-bottom: 4px solid $primarycolor-3;
-  text-decoration: none;
-  color:$primarycolor-3;
-  padding-bottom: 1rem;
-  text-align: center; 
-  
-  @include tablet {
-    padding-bottom: 2.4rem;
-   
-  }
-}
-.inactive {
-  text-decoration: none;
-  color: $secondarycolor-2;
-  padding-bottom: 1rem;
-  border-bottom: 4px solid none;
-  transition: border 0.2s ease-out;
-  &:hover {
-    border-bottom: 4px solid ;
-  }
-  @include tablet {
-    padding-bottom: 2.4rem;
-   
-  }
-}
-
-.header-container__navlinks {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  font-family: AvenirDemi;
-
-  &--anchor {
-    font-size: 1rem;
-    border-bottom: 5px solid $primarycolor-1;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    color:$secondarycolor-2;
-    text-decoration: none;
-  }
-
-  &--anchor:hover {
-    border-bottom: 4px solid $primarycolor-3;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-  }
-}
-
-
-
-
-
-
-.current {
   color: $primarycolor-3;
-  border-bottom: 4px solid $primarycolor-3;
-  width: 50%;
+  padding: 1rem 0 0 0;
+  width: 110%;
+  font-family: AvenirNormal;
+  @include tablet {
+  width: 106.3%;
+  padding: 1.5rem 0 0 1.5rem;
+  flex-direction: row;
+  }
+  @include desktop {
+    width: 107.95%;
+   
+    }
+
+  &__container-1 {
   display: flex;
   justify-content: center;
-  text-decoration: none;
   @include tablet {
-    width: 7%;
+   margin-right: 4rem;
+    }
   }
-}
+  &__container-2 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    @include tablet {
+      width: 20%;
+    }
+  }
+  &__button-container {
+    width: 50%;
 
-.shows {
-  @include tablet {
-    padding: 1rem 23rem 0rem 0rem;
-    width: 7%;
+    @include tablet {
+      width: 28%;
+    }
+  }
+  &__bio {
+    border-bottom: 3px solid $primarycolor-3;
+  }
+
+  &__show {
+    color: $secondarycolor-2;
+    @include tablet {
+      padding-left: 3rem;
+    }
+  }
+  &__show:hover {
+    border-bottom: 3px solid $primarycolor-3;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 0 1rem;
+    @include tablet {
+      padding-inline-start: 0rem;
+      justify-content: flex-start;
+    }
+  }
+  &__image {
+    height: 2rem;
+    width: 7rem;
+    padding-top: 1rem;
+    @include tablet {
+      padding-top: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__list-item {
+    list-style: none;
+  }
+
+  &__links-bio {
+    text-decoration: none;
+    color: $primarycolor-3;
+  }
+  &__links-show {
+    text-decoration: none;
+    color: $secondarycolor-2;
   }
 }
