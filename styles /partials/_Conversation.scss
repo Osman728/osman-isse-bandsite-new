@@ -5,13 +5,18 @@
 @use "./mixins" as *;
 
 .Conversation {
-  padding: 0 1rem;
-  width: 100%;
-  font-family: AvenirNormal;
-  @include tablet {
+   padding: 0 1rem;
+   width: 100%;
+   font-family: AvenirNormal;
+    @include tablet {
     padding: 0 2.25rem;
     width: 100%;
   }
+  @include desktop {
+    padding: 0 3.9375rem;
+    width: 100%;
+  }
+
   &__title {
     padding: 1.5rem 0 1rem 0;
     @include section-header;
@@ -19,8 +24,8 @@
     font-family: AvenirDemi;
     color: $primarycolor-1;
     @include tablet {
-      padding: 3rem 0 2.25rem 0;
-      @include setion-header-tab-desktop;
+     padding: 3rem 0 2.25rem 0;
+    @include setion-header-tab-desktop;
     }
   }
   &__container {
@@ -28,14 +33,14 @@
     flex-direction: row;
     justify-content: space-between;
     @include tablet {
-      justify-content: center;
+    justify-content: center;
     }
   }
   &__profile {
     @include tablet {
-      display: flex;
-      width: 17%;
-      justify-content: flex-end;
+    display: flex;
+    width: 17%;
+    justify-content: flex-end;
     }
   }
   &__profile-image {
@@ -46,8 +51,8 @@
     width: 36px;
     height: 36px;
     @include tablet {
-      width: 48px;
-      height: 48px;
+    width: 48px;
+    height: 48px;
     }
   }
 
@@ -56,8 +61,12 @@
     flex-direction: column;
     width: 85%;
     @include tablet {
-      width: 73%;
-      margin-right: 6rem;
+    width: 73%;
+    margin-right: 6rem;
+    }
+    @include desktop {
+    width: 45%;
+    margin-right: 18rem;
     }
   }
 
@@ -126,9 +135,9 @@
   &__button {
     display: flex;
     @include tablet {
-      height: 3.6rem;
-      width: 100%;
-      justify-content: flex-end;
+    height: 3.6rem;
+    width: 100%;
+    justify-content: flex-end;
     }
   }
 
@@ -145,8 +154,8 @@
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: $secondarycolor-1;
-      color: $primarycolor-3;
+    background-color: $secondarycolor-1;
+    color: $primarycolor-3;
     }
     @include tablet {
       width: 33%;
@@ -157,11 +166,15 @@
   }
 }
 .comment {
-  padding: 1.5rem 0 1rem 0;
-  @include tablet {
+    padding: 1.5rem 0 1rem 0;
+    @include tablet {
     width: 78.2%;
     margin-left: 4.5rem;
     padding: 3rem 0 2.25rem 0;
+  }
+  @include desktop {
+    width: 49.9%;
+    margin-left: 15.9rem;
   }
 
   &__section {
@@ -171,7 +184,7 @@
     border-top: 0.5px solid $secondarycolor-2;
     border-bottom: 0.5px solid$secondarycolor-2;
     @include tablet {
-      padding: 1.5rem 0 2.25rem 0;
+    padding: 1.5rem 0 2.25rem 0;
     }
   }
   &__avartar {
@@ -215,14 +228,14 @@
   &__usertext {
     padding-top: 1rem;
     @include tablet {
-      padding-top: 0.5rem;
+    padding-top: 0.5rem;
     }
   }
   &__usertext-post {
     @include bodycopy;
     margin: 0;
     @include tablet {
-      @include bodycopy-tab-desktop;
+    @include bodycopy-tab-desktop;
     }
   }
 }
