@@ -769,6 +769,7 @@ body {
 .comment__container {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .comment__info {
   display: flex;
