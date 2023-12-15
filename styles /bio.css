@@ -33,6 +33,11 @@ body {
     flex-direction: row;
   }
 }
+@media screen and (min-width: 80rem) {
+  .navbar {
+    padding: 1.5rem 0 0 5.93rem;
+  }
+}
 .navbar__container-1 {
   display: flex;
   justify-content: center;
@@ -67,7 +72,7 @@ body {
 }
 @media screen and (min-width: 80rem) {
   .navbar__button-container {
-    width: 27%;
+    width: 32%;
   }
 }
 .navbar__bio {
@@ -154,9 +159,20 @@ body {
     line-height: 4.25rem;
   }
 }
+@media screen and (min-width: 80rem) {
+  .hero__title {
+    padding: 0 5.93rem;
+  }
+}
 
 .about {
   width: 100%;
+}
+@media screen and (min-width: 80rem) {
+  .about {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
 }
 .about__title {
   padding: 1.5rem 1rem 1rem 1rem;
@@ -173,6 +189,11 @@ body {
     line-height: 2.75rem;
   }
 }
+@media screen and (min-width: 80rem) {
+  .about__title {
+    padding: 3rem 2.25rem 2.25rem 5.93rem;
+  }
+}
 .about__image {
   width: 90%;
   padding: 0 1rem 1rem 1rem;
@@ -181,13 +202,13 @@ body {
 @media screen and (min-width: 48rem) {
   .about__image {
     width: 72.6%;
-    padding: 0rem 2.25rem 2.25rem 5.7rem;
+    padding: 0 2.25rem 2.25rem 5.7rem;
   }
 }
 @media screen and (min-width: 80rem) {
   .about__image {
-    width: 80%;
-    padding: 0px 0 2.25rem 5rem;
+    width: 70.65%;
+    padding: 0 0 2.25rem 10.5rem;
   }
 }
 .about__quote {
@@ -201,7 +222,7 @@ body {
 @media screen and (min-width: 48rem) {
   .about__quote {
     width: 76%;
-    padding: 0rem 2.25rem 2.25rem 5.7rem;
+    padding: 0 2.25rem 2.25rem 5.7rem;
     font-size: 1.5rem;
     line-height: 2rem;
   }
@@ -209,7 +230,7 @@ body {
 @media screen and (min-width: 80rem) {
   .about__quote {
     width: 50%;
-    padding: 0px 0 1.25rem 5rem;
+    padding: 0 0 1.25rem 10.5rem;
   }
 }
 .about__author {
@@ -231,7 +252,7 @@ body {
 @media screen and (min-width: 80rem) {
   .about__author {
     width: 56%;
-    padding: 0px 0 1.25rem 5rem;
+    padding: 0 0 1.25rem 10.5rem;
   }
 }
 .about__name {
@@ -253,7 +274,7 @@ body {
 @media screen and (min-width: 80rem) {
   .about__name {
     width: 56%;
-    padding: 0px 0 1.25rem 5rem;
+    padding: 0 0 1.25rem 10.5rem;
   }
 }
 @media screen and (min-width: 48rem) {
@@ -261,6 +282,11 @@ body {
     display: flex;
     gap: 2.7rem;
     padding-left: 4.7rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .about__container {
+    padding-left: 8rem;
   }
 }
 .about__container--text {
@@ -282,7 +308,7 @@ body {
 @media screen and (min-width: 80rem) {
   .about__container--text {
     width: 36.2%;
-    padding: 0px 0 1.25rem 5rem;
+    padding: 0 0 2.25rem 2.4rem;
   }
 }
 
@@ -305,6 +331,13 @@ body {
     line-height: 2.75rem;
   }
 }
+@media screen and (min-width: 80rem) {
+  .gallery__title {
+    padding: 3rem 2.25rem 2.25rem 5.93rem;
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}
 .gallery__photos {
   display: flex;
   flex-direction: column;
@@ -317,6 +350,14 @@ body {
     padding: 0 0 0 2.25rem;
     width: 95%;
     justify-content: space-between;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .gallery__photos {
+    padding: 0 0 0 5.93rem;
+    width: auto;
+    margin: 0 auto;
+    max-width: 1280px;
   }
 }
 .gallery__photos--item {
@@ -356,6 +397,13 @@ body {
     padding: 3rem 2.25rem 2.25rem 2.25rem;
   }
 }
+@media screen and (min-width: 80rem) {
+  .footer__header {
+    padding: 3rem 2.25rem 2.25rem 5.93rem;
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}
 .footer__title {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -390,7 +438,7 @@ body {
 @media screen and (min-width: 80rem) {
   .footer__socials {
     width: 12%;
-    padding: 0;
+    padding: 0 0 0 2rem;
   }
 }
 .footer__social-icon img {
@@ -418,7 +466,7 @@ body {
 }
 @media screen and (min-width: 80rem) {
   .footer__header-img {
-    padding: 3rem 0 1.5rem 39.2rem;
+    padding: 2.7rem 0 1.5rem 39.2rem;
   }
 }
 .footer__content {
@@ -438,7 +486,10 @@ body {
 }
 @media screen and (min-width: 80rem) {
   .footer__content {
-    padding: 0 29.7rem 0 2.25rem;
+    width: 53%;
+    padding: 0 26rem 0 0rem;
+    margin: 0 auto;
+    max-width: 1280px;
   }
 }
 .footer__card {
@@ -515,10 +566,23 @@ body {
     padding: 0 2.25rem 2.25rem 2.25rem;
   }
 }
+@media screen and (min-width: 80rem) {
+  .footer__copyright {
+    padding: 0 2.25rem 2.25rem 5.93rem;
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}
 
 .Conversation {
   width: 100%;
   font-family: AvenirNormal;
+}
+@media screen and (min-width: 80rem) {
+  .Conversation {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
 }
 .Conversation__title {
   padding: 1.5rem 1rem 1rem 1rem;
@@ -533,6 +597,11 @@ body {
     padding: 3rem 2.25rem 2.25rem 2.25rem;
     font-size: 2.25rem;
     line-height: 2.75rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .Conversation__title {
+    padding: 3rem 2.25rem 2.25rem 5.93rem;
   }
 }
 .Conversation__container {

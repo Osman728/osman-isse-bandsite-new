@@ -16,7 +16,8 @@
     flex-direction: row;
   }
   @include desktop {
-    
+    padding: 1.5rem 0 0 5.93rem;
+   
   }
 
   &__container-1 {
@@ -27,6 +28,7 @@
     }
     @include desktop {
       margin-right: 2rem;
+      
     }
   }
   &__container-2 {
@@ -44,7 +46,7 @@
       width: 50%;
     }
     @include desktop {
-      width: 27%;
+      width: 32%;
     }
   }
   &__bio {

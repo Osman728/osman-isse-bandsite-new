@@ -7,7 +7,10 @@
 .Conversation {
   width: 100%;
   font-family: AvenirNormal;
-
+  @include desktop {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
   &__title {
     padding: 1.5rem 1rem 1rem 1rem;
     @include section-header;
@@ -17,6 +20,11 @@
     @include tablet {
       padding: 3rem 2.25rem 2.25rem 2.25rem;
       @include setion-header-tab-desktop;
+    }
+    @include desktop {
+      padding: 3rem 2.25rem 2.25rem 5.93rem;
+      
+    
     }
   }
   &__container {

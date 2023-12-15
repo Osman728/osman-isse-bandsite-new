@@ -6,6 +6,10 @@
 
 .about {
   width: 100%;
+  @include desktop {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
 
   &__title {
     padding: 1.5rem 1rem 1rem 1rem;
@@ -17,7 +21,10 @@
       padding: 3rem 2.25rem 2.25rem 2.25rem;
       @include setion-header-tab-desktop;
     }
-
+    @include desktop {
+      padding: 3rem 2.25rem 2.25rem 5.93rem;
+    
+    }
    
   }
 
@@ -27,11 +34,11 @@
     margin: 0;
     @include tablet {
       width: 72.6%;
-      padding: 0rem 2.25rem 2.25rem 5.7rem;
+      padding: 0 2.25rem 2.25rem 5.7rem;
     }
     @include desktop {
-      width: 80%;
-      padding: 0px 0 2.25rem 5rem;
+      width: 70.65%;
+      padding: 0 0 2.25rem 10.5rem;
     }
   }
   &__quote {
@@ -42,12 +49,12 @@
     color: $primarycolor-1;
     @include tablet {
       width: 76%;
-      padding: 0rem 2.25rem 2.25rem 5.7rem;
+      padding: 0 2.25rem 2.25rem 5.7rem;
       @include subheader-tab-desktop;
     }
     @include desktop {
       width: 50%;
-      padding: 0px 0 1.25rem 5rem;
+      padding: 0 0 1.25rem 10.5rem;
     }
   }
   &__author {
@@ -63,7 +70,7 @@
     }
     @include desktop {
       width: 56%;
-      padding: 0px 0 1.25rem 5rem;
+      padding: 0 0 1.25rem 10.5rem;
     }
   }
 
@@ -80,7 +87,7 @@
     }
     @include desktop {
       width: 56%;
-      padding: 0px 0 1.25rem 5rem;
+      padding: 0 0 1.25rem 10.5rem;
     }
   }
   &__container {
@@ -88,6 +95,11 @@
       display: flex;
       gap: 2.7rem;
       padding-left: 4.7rem;
+
+    }
+    @include desktop {
+      
+      padding-left: 8rem;
 
     }
   }
@@ -106,7 +118,11 @@
 
     @include desktop {
       width: 36.2%;
-      padding: 0px 0 1.25rem 5rem;
+      padding: 0 0 2.25rem 2.4rem;
+      
     }
   }
 }
+
+
+

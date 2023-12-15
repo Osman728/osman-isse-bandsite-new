@@ -18,6 +18,11 @@
       padding: 3rem 2.25rem 2.25rem 2.25rem;
       @include setion-header-tab-desktop;
     }
+    @include desktop {
+      padding: 3rem 2.25rem 2.25rem 5.93rem;
+      margin: 0 auto;
+      max-width: 1280px;
+    }
   }
   &__photos {
     display: flex;
@@ -29,6 +34,13 @@
       padding: 0 0 0 2.25rem;
       width: 95%;
       justify-content: space-between;
+    }
+    @include desktop {
+      padding: 0 0 0 5.93rem;
+      width: auto;
+      margin: 0 auto;
+    max-width: 1280px;
+    
     }
   }
   &__photos--item {
