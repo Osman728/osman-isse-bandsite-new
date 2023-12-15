@@ -6,7 +6,7 @@
 
 .shows {
   font-family: AvenirNormal;
-  width: 100%;
+  width: 90%;
   @include tablet {
     padding: 0 2.25rem;
     width: 100%;
@@ -113,7 +113,7 @@
     margin: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    padding: 12px;
+    padding: 0.5rem;
     &:hover {
       background-color: $secondarycolor-1;
       color: $primarycolor-3;

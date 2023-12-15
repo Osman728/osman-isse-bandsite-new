@@ -9,15 +9,15 @@
   background: $primarycolor-1;
   color: $primarycolor-3;
   padding: 1rem 0 0 0;
-  width: 110%;
+ 
   font-family: AvenirNormal;
   @include tablet {
-    width: 106.27%;
     padding: 1.5rem 0 0 1.5rem;
     flex-direction: row;
   }
   @include desktop {
-    width: 107.95%;
+    padding: 1.5rem 0 0 5.93rem;
+   
   }
 
   &__container-1 {
@@ -25,6 +25,10 @@
     justify-content: center;
     @include tablet {
       margin-right: 4rem;
+    }
+    @include desktop {
+      margin-right: 2rem;
+      
     }
   }
   &__container-2 {
@@ -39,7 +43,10 @@
     width: 50%;
 
     @include tablet {
-      width: 28%;
+      width: 50%;
+    }
+    @include desktop {
+      width: 32%;
     }
   }
   &__show {
@@ -49,17 +56,19 @@
   &__bio {
     color: $secondarycolor-2;
     @include tablet {
-      padding-right: 3rem;
+      padding-left: 3rem;
+    }
+    @include desktop {
+      padding-left: 2rem;
     }
   }
-  &__bio:hover {
-    border-bottom: 3px solid $primarycolor-3;
-  }
+  
   &__list {
     display: flex;
     justify-content: space-around;
     padding: 0 0 0 1rem;
     @include tablet {
+      margin: 0.8rem 0;
       padding-inline-start: 0rem;
       justify-content: flex-start;
     }
@@ -78,11 +87,11 @@
     list-style: none;
   }
 
-  &__links-show {
+  &__links-bio {
     text-decoration: none;
     color: $primarycolor-3;
   }
-  &__links-bio {
+  &__links-show {
     text-decoration: none;
     color: $secondarycolor-2;
   }
