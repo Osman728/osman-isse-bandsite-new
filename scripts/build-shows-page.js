@@ -1,42 +1,47 @@
-const showsArray = [
-  {
-    date: "Mon Sept 06 2021",
-    venue: "Ronald Lane",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Tue Sept 21 2021",
-    venue: "Pier 3 East",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Fri Oct 15 2021",
-    venue: "View Lounge",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Sat Nov 06 2021",
-    venue: "Hyatt Agency",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Fri Nov 26 2021",
-    venue: "Moscow Center",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Wed Dec 15 2021",
-    venue: "Press Club",
-    location: "San Francisco, CA",
-  },
-];
+// const showsArray = [
+//   {
+//     date: "Mon Sept 06 2021",
+//     venue: "Ronald Lane",
+//     location: "San Francisco, CA",
+//   },
+//   {
+//     date: "Tue Sept 21 2021",
+//     venue: "Pier 3 East",
+//     location: "San Francisco, CA",
+//   },
+//   {
+//     date: "Fri Oct 15 2021",
+//     venue: "View Lounge",
+//     location: "San Francisco, CA",
+//   },
+//   {
+//     date: "Sat Nov 06 2021",
+//     venue: "Hyatt Agency",
+//     location: "San Francisco, CA",
+//   },
+//   {
+//     date: "Fri Nov 26 2021",
+//     venue: "Moscow Center",
+//     location: "San Francisco, CA",
+//   },
+//   {
+//     date: "Wed Dec 15 2021",
+//     venue: "Press Club",
+//     location: "San Francisco, CA",
+//   },
+// ];
 
-function renderShows() {
+let api = new BandSiteApi(myApiKey);
+
+
+async function renderShows() {
   const bandSiteShows = document.querySelector(".shows__container");
 
   bandSiteShows.innerHTML = "";
+  
+  const showDates = await api.getShowDates();
 
-  for (let i = 0; i < showsArray.length; i++) {
+  for (let i = 0; i < showDates.length; i++) {
     const showsEl = document.createElement("div");
     const showsDate = document.createElement("h4");
     const showsDay = document.createElement("p");
@@ -60,9 +65,11 @@ function renderShows() {
     showsLocation.innerText = "Location";
     showsBuyTicket.innerText = "BUY TICKETS";
 
-    showsDay.innerText = showsArray[i].date;
-    showsVenusName.innerText = showsArray[i].venue;
-    showsLocationPlace.innerText = showsArray[i].location;
+    let date= new Date(showDates[i].date)
+
+    showsDay.innerText = date.toDateString();
+    showsVenusName.innerText = showDates[i].place;
+    showsLocationPlace.innerText = showDates[i].location;
 
     showsEl.appendChild(showsDate);
     showsEl.appendChild(showsDay);

@@ -1,5 +1,4 @@
 const myApiKey = "?api_key=c9eb1031-2318-49df-a6fd-29308f55f003";
-
 class BandSiteApi {
   constructor(key) {
     this.key = key;
@@ -16,7 +15,6 @@ class BandSiteApi {
     const showDates = response.data;
     return showDates;
   };
-
   postComment = async function (newComment) {
     const response = await axios.post(
       this.baseUrl + "comments" + this.key,
@@ -26,17 +24,16 @@ class BandSiteApi {
   };
 }
 async function fetchData() {
-    let api = new BandSiteApi(myApiKey);
-    try {
-      const comments = await api.getComments();
-      console.log("Comments:", comments);
-  
-      const showDates = await api.getShowDates();
-      console.log("Show Dates:", showDates);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  }
-  
-  fetchData();
+  let api = new BandSiteApi(myApiKey);
+  try {
+    const comments = await api.getComments();
+    console.log("Comments:", comments);
 
+    const showDates = await api.getShowDates();
+    console.log("Show Dates:", showDates);
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+}
+
+fetchData();
