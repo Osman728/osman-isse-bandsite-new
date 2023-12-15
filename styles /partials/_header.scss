@@ -16,7 +16,7 @@
     flex-direction: row;
   }
   @include desktop {
-    width: 107.95%;
+    
   }
 
   &__container-1 {
@@ -24,6 +24,9 @@
     justify-content: center;
     @include tablet {
       margin-right: 4rem;
+    }
+    @include desktop {
+      margin-right: 2rem;
     }
   }
   &__container-2 {
@@ -40,6 +43,9 @@
     @include tablet {
       width: 50%;
     }
+    @include desktop {
+      width: 27%;
+    }
   }
   &__bio {
     border-bottom: 3px solid $primarycolor-3;
@@ -49,6 +55,9 @@
     color: $secondarycolor-2;
     @include tablet {
       padding-left: 3rem;
+    }
+    @include desktop {
+      padding-left: 2rem;
     }
   }
   

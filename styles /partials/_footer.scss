@@ -14,14 +14,12 @@
   @include tablet {
     @include footercopy-tab-desktop;
   }
-  @include desktop {
-    padding: 3rem 3.9375rem;
-  }
-
   &__header {
     @include tablet {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      padding: 3rem 2.25rem 2.25rem 2.25rem;
     }
   }
   &__title {
@@ -31,9 +29,9 @@
     padding: 1.5rem 1rem 1rem 1rem;
     margin: 0rem;
     @include tablet {
-      padding: 3rem 0rem 2.25rem 2.25rem;
+      padding: 0;
       @include setion-header-tab-desktop;
-      padding-bottom: 2.25rem;
+      
     }
   }
   &__socials {
@@ -46,11 +44,13 @@
     width: 30%;
     @include tablet {
       width: 17%;
-      padding: 3rem 0 1.7rem 2rem;
+      padding: 0 10rem 0 0;
+      height: 1.5rem;
+
     }
     @include desktop {
       width: 12%;
-      padding: 0 0 1.7rem 6.2rem;
+      padding: 0;
     }
   }
 
@@ -72,10 +72,12 @@
 
   &__header-img {
     @include tablet {
-      padding: 3rem 1rem 1.5rem 14rem;
+      padding: 0;
+      height: 1.5rem;
+
     }
     @include desktop {
-      padding: 0 0 1.5rem 39.2rem;
+      padding: 3rem 0 1.5rem 39.2rem;
     }
   }
 
@@ -90,10 +92,10 @@
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      padding: 0 3.7rem 0 2.25rem;
+      padding: 0 2.25rem 0 2.25rem;
     }
     @include desktop {
-      padding: 0 29.7rem 0 0;
+      padding: 0 29.7rem 0 2.25rem;
     }
   }
 

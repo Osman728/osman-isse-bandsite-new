@@ -7,12 +7,7 @@
 .gallery {
   width: 100%;
   background-color: $secondarycolor-3;
-  @include tablet {
-   
-  }
-  @include desktop {
-    padding: 0 3.9375rem;
-  }
+
   &__title {
     padding: 1.5rem 1rem 1rem 1rem;
     margin: 0;
@@ -22,9 +17,6 @@
     @include tablet {
       padding: 3rem 2.25rem 2.25rem 2.25rem;
       @include setion-header-tab-desktop;
-    }
-    @include desktop {
-      padding:3rem 2.25rem 2.25rem 2.25rem;
     }
   }
   &__photos {
@@ -46,7 +38,6 @@
       width: 27.6%;
     }
     @include desktop {
-      padding: 0 2.25rem 2.25rem 0;
       width: 29.6%;
     }
   }
