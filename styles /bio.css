@@ -25,7 +25,6 @@ body {
   background: #323232;
   color: #ffffff;
   padding: 1rem 0 0 0;
-  width: 110%;
   font-family: AvenirNormal;
 }
 @media screen and (min-width: 48rem) {
@@ -123,8 +122,6 @@ body {
   height: 17.5rem;
   display: flex;
   align-items: center;
-  padding: 0 1rem 0 1rem;
-  width: 100%;
 }
 @media screen and (min-width: 48rem) {
   .hero {
@@ -143,6 +140,7 @@ body {
   line-height: 2rem;
   font-family: AvenirDemi;
   color: #ffffff;
+  padding: 0 1rem;
 }
 @media screen and (min-width: 48rem) {
   .hero__title {
@@ -152,7 +150,6 @@ body {
 }
 
 .about {
-  padding: 0 1rem;
   width: 100%;
 }
 @media screen and (min-width: 48rem) {
@@ -167,7 +164,7 @@ body {
   }
 }
 .about__title {
-  padding: 1.5rem 0 1rem 0;
+  padding: 1.5rem 1rem 1rem 1rem;
   font-size: 1.5rem;
   line-height: 2rem;
   margin: 0;
@@ -189,8 +186,8 @@ body {
   }
 }
 .about__image {
-  width: 100%;
-  padding: 0 0 1rem 0;
+  width: 90%;
+  padding: 0 1rem 1rem 1rem;
   margin: 0;
 }
 @media screen and (min-width: 48rem) {
@@ -208,7 +205,7 @@ body {
 .about__quote {
   font-size: 0.875rem;
   line-height: 1.375rem;
-  padding: 0 0 1rem 0;
+  padding: 0 1rem 1rem 1rem;
   margin: 0;
   font-family: AvenirDemi;
   color: #323232;
@@ -230,7 +227,7 @@ body {
 .about__author {
   font-size: 0.875rem;
   line-height: 1.375rem;
-  padding: 0 0 1rem 0;
+  padding: 0 1rem 1rem 1rem;
   margin: 0;
   font-family: Avenir;
   color: #323232;
@@ -252,7 +249,7 @@ body {
 .about__name {
   font-size: 0.875rem;
   line-height: 1.375rem;
-  padding: 0 0 1rem 0;
+  padding: 0 1rem 1rem 1rem;
   margin: 0;
   font-family: AvenirDemi;
   color: #323232;
@@ -280,7 +277,7 @@ body {
 .about__container--text {
   font-size: 0.8125rem;
   line-height: 1.125rem;
-  padding: 0 0 1rem 0;
+  padding: 0 1rem 1rem 1rem;
   margin: 0;
   font-family: AvenirNormal;
   color: #323232;
@@ -302,7 +299,6 @@ body {
 
 .gallery {
   width: 100%;
-  padding: 0 1rem;
   background-color: #fafafa;
 }
 @media screen and (min-width: 48rem) {
@@ -316,7 +312,7 @@ body {
   }
 }
 .gallery__title {
-  padding: 1.5rem 0 1rem 0;
+  padding: 1.5rem 1rem 1rem 1rem;
   margin: 0;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -347,7 +343,7 @@ body {
   }
 }
 .gallery__photos--item {
-  padding: 0 0 1rem 0;
+  padding: 0 1rem 1rem 1rem;
 }
 @media screen and (min-width: 48rem) {
   .gallery__photos--item {
@@ -364,7 +360,6 @@ body {
 
 .footer {
   background-color: #323232;
-  padding: 1.5rem 1rem;
   width: 100%;
   color: #fafafa;
   font-size: 0.8125rem;
@@ -394,7 +389,7 @@ body {
   line-height: 2rem;
   font-family: AvenirDemi;
   color: #fafafa;
-  padding: 0 0 1rem 0;
+  padding: 1.5rem 1rem 1rem 1rem;
   margin: 0rem;
 }
 @media screen and (min-width: 48rem) {
@@ -405,6 +400,7 @@ body {
   }
 }
 .footer__socials {
+  padding: 0 1rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -454,7 +450,7 @@ body {
 .footer__content {
   display: flex;
   flex-direction: column;
-  padding-top: 1.5rem;
+  padding: 1.5rem 1rem;
 }
 @media screen and (min-width: 48rem) {
   .footer__content {
@@ -528,7 +524,7 @@ body {
   }
 }
 .footer__logo-img--mobile {
-  padding: 1.5rem 0 1rem 0;
+  padding: 1.5rem 1rem 1rem 1rem;
 }
 @media screen and (min-width: 48rem) {
   .footer__logo-img--mobile {
@@ -536,12 +532,12 @@ body {
   }
 }
 .footer__copyright {
+  padding: 0 1rem 1rem 1rem;
   font-family: AvenirNormal;
   margin: 0;
 }
 
 .Conversation {
-  padding: 0 1rem;
   width: 100%;
   font-family: AvenirNormal;
 }
@@ -558,7 +554,7 @@ body {
   }
 }
 .Conversation__title {
-  padding: 1.5rem 0 1rem 0;
+  padding: 1.5rem 1rem 1rem 1rem;
   font-size: 1.5rem;
   line-height: 2rem;
   margin: 0;
@@ -573,6 +569,7 @@ body {
   }
 }
 .Conversation__container {
+  padding: 0 1rem 1rem 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -724,7 +721,7 @@ body {
 }
 
 .comment {
-  padding: 1.5rem 0 1rem 0;
+  padding: 1.5rem 1rem 1rem 1rem;
 }
 @media screen and (min-width: 48rem) {
   .comment {

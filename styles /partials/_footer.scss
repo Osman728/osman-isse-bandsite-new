@@ -6,7 +6,6 @@
 
 .footer {
   background-color: $primarycolor-1;
-  padding: 1.5rem 1rem;
   width: 100%;
   color: $secondarycolor-3;
   @include footercopy;
@@ -30,7 +29,7 @@
     @include section-header;
     font-family: AvenirDemi;
     color: $secondarycolor-3;
-    padding: 0 0 1rem 0;
+    padding: 1.5rem 1rem 1rem 1rem;
     margin: 0rem;
     @include tablet {
       @include setion-header-tab-desktop;
@@ -38,6 +37,7 @@
     }
   }
   &__socials {
+    padding: 0 1rem;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -82,7 +82,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    padding-top: 1.5rem;
+    padding:1.5rem 1rem;
 
     @include tablet {
       display: flex;
@@ -154,7 +154,7 @@
   }
 
   &__logo-img--mobile {
-    padding: 1.5rem 0 1rem 0;
+    padding: 1.5rem 1rem 1rem 1rem;
 
     @include tablet {
       display: none;
@@ -162,6 +162,7 @@
   }
 
   &__copyright {
+    padding: 0 1rem 1rem 1rem;
     font-family: AvenirNormal;
     margin: 0;
   }

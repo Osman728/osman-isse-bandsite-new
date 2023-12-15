@@ -6,7 +6,6 @@
 
 .gallery {
   width: 100%;
-  padding: 0 1rem;
   background-color: $secondarycolor-3;
   @include tablet {
     padding: 0 2.25rem;
@@ -15,7 +14,7 @@
     padding: 0 3.9375rem;
   }
   &__title {
-    padding: 1.5rem 0 1rem 0;
+    padding: 1.5rem 1rem 1rem 1rem;
     margin: 0;
     @include section-header;
     font-family: AvenirDemi;
@@ -38,7 +37,7 @@
     }
   }
   &__photos--item {
-    padding: 0 0 1rem 0;
+    padding: 0 1rem 1rem 1rem;
     @include tablet {
       padding: 0 2.25rem 2.25rem 0;
       width: 28.6%;

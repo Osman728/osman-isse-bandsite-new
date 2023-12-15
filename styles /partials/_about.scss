@@ -5,7 +5,7 @@
 @use "./variable" as *;
 
 .about {
-  padding: 0 1rem;
+  
   width: 100%;
   @include tablet {
     padding: 0 2.25rem;
@@ -16,7 +16,7 @@
   }
 
   &__title {
-    padding: 1.5rem 0 1rem 0;
+    padding: 1.5rem 1rem 1rem 1rem;
     @include section-header;
     margin: 0;
     font-family: AvenirDemi;
@@ -33,8 +33,8 @@
   }
 
   &__image {
-    width: 100%;
-    padding: 0 0 1rem 0;
+    width: 90%;
+    padding: 0 1rem 1rem 1rem;
     margin: 0;
     @include tablet {
       width: 80%;
@@ -47,7 +47,7 @@
   }
   &__quote {
     @include subheader;
-    padding: 0 0 1rem 0;
+    padding: 0 1rem 1rem 1rem;
     margin: 0;
     font-family: AvenirDemi;
     color: $primarycolor-1;
@@ -63,7 +63,7 @@
   }
   &__author {
     @include subheader;
-    padding: 0 0 1rem 0;
+    padding: 0 1rem 1rem 1rem;
     margin: 0;
     font-family: Avenir;
     color: $primarycolor-1;
@@ -80,7 +80,7 @@
 
   &__name {
     @include subheader;
-    padding: 0 0 1rem 0;
+    padding: 0 1rem 1rem 1rem;
     margin: 0;
     font-family: AvenirDemi;
     color: $primarycolor-1;
@@ -103,7 +103,7 @@
 
   &__container--text {
     @include bodycopy;
-    padding: 0 0 1rem 0;
+    padding: 0 1rem 1rem 1rem;
     margin: 0;
     font-family: AvenirNormal;
     color: $primarycolor-1;
