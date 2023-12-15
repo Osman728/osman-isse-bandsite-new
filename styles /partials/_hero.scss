@@ -19,7 +19,7 @@
  
 
   @include tablet {
-    padding: 0 2.25rem 0 2.25rem;
+   
     height: 29.375rem;
   }
   @include desktop {
@@ -35,6 +35,7 @@
     color: $primarycolor-3;
     padding: 0 1rem;
     @include tablet {
+      padding: 0 2.25rem;
       @include page-header-tab-desktop;
     }
   }

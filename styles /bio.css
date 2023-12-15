@@ -29,7 +29,6 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .navbar {
-    width: 106.3%;
     padding: 1.5rem 0 0 1.5rem;
     flex-direction: row;
   }
@@ -63,7 +62,7 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .navbar__button-container {
-    width: 28%;
+    width: 50%;
   }
 }
 .navbar__bio {
@@ -77,9 +76,6 @@ body {
     padding-left: 3rem;
   }
 }
-.navbar__show:hover {
-  border-bottom: 3px solid #ffffff;
-}
 .navbar__list {
   display: flex;
   justify-content: space-around;
@@ -87,6 +83,7 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .navbar__list {
+    margin: 0.8rem 0;
     padding-inline-start: 0rem;
     justify-content: flex-start;
   }
@@ -125,7 +122,6 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .hero {
-    padding: 0 2.25rem 0 2.25rem;
     height: 29.375rem;
   }
 }
@@ -144,6 +140,7 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .hero__title {
+    padding: 0 2.25rem;
     font-size: 3.75rem;
     line-height: 4.25rem;
   }
@@ -154,7 +151,6 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .about {
-    padding: 0 2.25rem;
     width: 100%;
   }
 }
@@ -173,7 +169,7 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .about__title {
-    padding: 3rem 0 2.25rem 0;
+    padding: 3rem 2.25rem 2.25rem 2.25rem;
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
@@ -192,8 +188,8 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .about__image {
-    width: 80%;
-    padding: 0px 0 2.25rem 3.5rem;
+    width: 72.6%;
+    padding: 0rem 2.25rem 2.25rem 5.7rem;
   }
 }
 @media screen and (min-width: 80rem) {
@@ -212,8 +208,8 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .about__quote {
-    width: 80%;
-    padding: 0px 0 1.25rem 3.5rem;
+    width: 76%;
+    padding: 0rem 2.25rem 2.25rem 5.7rem;
     font-size: 1.5rem;
     line-height: 2rem;
   }
@@ -235,7 +231,7 @@ body {
 @media screen and (min-width: 48rem) {
   .about__author {
     width: 80%;
-    padding: 0px 0 2.25rem 3.5rem;
+    padding: 0rem 2.25rem 2.25rem 5.7rem;
     font-size: 1.5rem;
     line-height: 2rem;
   }
@@ -257,7 +253,7 @@ body {
 @media screen and (min-width: 48rem) {
   .about__name {
     width: 80%;
-    padding: 0px 0 2.25rem 3.5rem;
+    padding: 0rem 2.25rem 2.25rem 5.7rem;
     font-size: 1.5rem;
     line-height: 2rem;
   }
@@ -271,7 +267,8 @@ body {
 @media screen and (min-width: 48rem) {
   .about__container {
     display: flex;
-    gap: 1.2rem;
+    gap: 2.7rem;
+    padding-left: 4.7rem;
   }
 }
 .about__container--text {
@@ -285,7 +282,7 @@ body {
 @media screen and (min-width: 48rem) {
   .about__container--text {
     width: 35.54%;
-    padding: 0px 0 2.25rem 3.5rem;
+    padding-bottom: 2.25rem;
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
@@ -300,11 +297,6 @@ body {
 .gallery {
   width: 100%;
   background-color: #fafafa;
-}
-@media screen and (min-width: 48rem) {
-  .gallery {
-    padding: 0 2.25rem;
-  }
 }
 @media screen and (min-width: 80rem) {
   .gallery {
@@ -321,14 +313,14 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .gallery__title {
-    padding: 3rem 0 2.25rem 0;
+    padding: 3rem 2.25rem 2.25rem 2.25rem;
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
 }
 @media screen and (min-width: 80rem) {
   .gallery__title {
-    padding: 3rem 0 2.25rem 0;
+    padding: 3rem 2.25rem 2.25rem 2.25rem;
   }
 }
 .gallery__photos {
@@ -340,6 +332,9 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 0 0 2.25rem;
+    width: 95%;
+    justify-content: space-between;
   }
 }
 .gallery__photos--item {
@@ -348,7 +343,7 @@ body {
 @media screen and (min-width: 48rem) {
   .gallery__photos--item {
     padding: 0 2.25rem 2.25rem 0;
-    width: 28.6%;
+    width: 27.6%;
   }
 }
 @media screen and (min-width: 80rem) {
@@ -368,7 +363,6 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .footer {
-    padding: 3rem 2.25rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
@@ -394,6 +388,7 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .footer__title {
+    padding: 3rem 0rem 2.25rem 2.25rem;
     font-size: 2.25rem;
     line-height: 2.75rem;
     padding-bottom: 2.25rem;
@@ -411,7 +406,7 @@ body {
 @media screen and (min-width: 48rem) {
   .footer__socials {
     width: 17%;
-    padding: 0 0 1.7rem 3rem;
+    padding: 3rem 0 1.7rem 2rem;
   }
 }
 @media screen and (min-width: 80rem) {
@@ -439,7 +434,7 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .footer__header-img {
-    padding: 0 0 1.5rem 14rem;
+    padding: 3rem 1rem 1.5rem 14rem;
   }
 }
 @media screen and (min-width: 80rem) {
@@ -459,7 +454,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3.7rem 0 0;
+    padding: 0 3.7rem 0 2.25rem;
   }
 }
 @media screen and (min-width: 80rem) {
@@ -536,6 +531,11 @@ body {
   font-family: AvenirNormal;
   margin: 0;
 }
+@media screen and (min-width: 48rem) {
+  .footer__copyright {
+    padding: 0 2.25rem 2.25rem 2.25rem;
+  }
+}
 
 .Conversation {
   width: 100%;
@@ -543,7 +543,6 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .Conversation {
-    padding: 0 2.25rem;
     width: 100%;
   }
 }
@@ -563,7 +562,7 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .Conversation__title {
-    padding: 3rem 0 2.25rem 0;
+    padding: 3rem 2.25rem 2.25rem 2.25rem;
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
@@ -577,6 +576,7 @@ body {
 @media screen and (min-width: 48rem) {
   .Conversation__container {
     justify-content: center;
+    width: 95%;
   }
 }
 @media screen and (min-width: 48rem) {
@@ -609,7 +609,7 @@ body {
 @media screen and (min-width: 48rem) {
   .Conversation__form {
     width: 73%;
-    margin-right: 6rem;
+    margin-right: 3rem;
   }
 }
 @media screen and (min-width: 80rem) {
@@ -725,9 +725,9 @@ body {
 }
 @media screen and (min-width: 48rem) {
   .comment {
-    width: 78.2%;
-    margin-left: 4.5rem;
-    padding: 3rem 0 2.25rem 0;
+    width: 77.9%;
+    margin-left: 5.6rem;
+    padding: 0 0 2.25rem 0;
   }
 }
 @media screen and (min-width: 80rem) {
