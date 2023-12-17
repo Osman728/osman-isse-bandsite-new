@@ -22,9 +22,10 @@ function createComment(comments) {
 
   const timestamp = comments.timestamp;
   const date = new Date(timestamp);
-  const formattedDate = `${
-    date.getMonth() + 1
-  }/${date.getDate()}/${date.getFullYear()}`;
+  const formattedMonth = (date.getMonth() + 1).toString().padStart(2, "0");
+  const formattedDay = date.getDate().toString().padStart(2, "0");
+  const formattedYear = date.getFullYear();
+  const formattedDate = `${formattedMonth}/${formattedDay}/${formattedYear}`;
 
   userName.innerText = comments.name;
   datePosted.innerText = formattedDate;
