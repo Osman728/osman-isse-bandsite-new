@@ -10,7 +10,7 @@
   color: $primarycolor-3;
   padding: 1rem 0 0 0;
  
-  font-family: AvenirNormal;
+  font-family: 400;
   @include tablet {
     padding: 1.5rem 0 0 2.25rem;
     flex-direction: row;
@@ -90,11 +90,11 @@
     list-style: none;
   }
 
-  &__links-bio {
+  &__links-show {
     text-decoration: none;
     color: $primarycolor-3;
   }
-  &__links-show {
+  &__links-bio {
     text-decoration: none;
     color: $secondarycolor-2;
   }

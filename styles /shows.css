@@ -26,7 +26,7 @@ body {
   background: #323232;
   color: #ffffff;
   padding: 1rem 0 0 0;
-  font-family: AvenirNormal;
+  font-family: 400;
 }
 @media screen and (min-width: 768px) {
   .navbar {
@@ -118,11 +118,11 @@ body {
 .navbar__list-item {
   list-style: none;
 }
-.navbar__links-bio {
+.navbar__links-show {
   text-decoration: none;
   color: #ffffff;
 }
-.navbar__links-show {
+.navbar__links-bio {
   text-decoration: none;
   color: #e1e1e1;
 }
@@ -353,8 +353,6 @@ body {
   margin: 0;
   font-size: 1rem;
   line-height: 2rem;
-  font-family: AvenirNormal;
-  color: #ffffff;
   padding: 0 1rem;
 }
 @media screen and (min-width: 768px) {
@@ -385,7 +383,7 @@ body {
   width: 70%;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: AvenirDemi;
+  font-weight: 600;
   color: #ffffff;
   padding: 0 1rem;
 }
@@ -428,7 +426,7 @@ body {
 }
 
 .shows {
-  font-family: AvenirNormal;
+  font-weight: 400;
   width: 90%;
 }
 @media screen and (min-width: 768px) {
@@ -448,7 +446,7 @@ body {
   font-size: 1.5rem;
   line-height: 2rem;
   margin: 0;
-  font-family: AvenirDemi;
+  font-weight: 600;
   color: #323232;
 }
 @media screen and (min-width: 768px) {
@@ -508,7 +506,7 @@ body {
 .shows__info-date, .shows__info-Venus, .shows__info-location {
   font-size: 0.875rem;
   line-height: 1.375rem;
-  font-family: AvenirDemi;
+  font-weight: 600;
   color: #afafaf;
   padding-top: 1rem;
 }
@@ -520,11 +518,11 @@ body {
 .shows__info-day, .shows__info-Venusname, .shows__info-locationplace {
   font-size: 0.8125rem;
   line-height: 1.125rem;
-  font-family: AvenirNormal;
+  font-weight: 400;
   color: #323232;
 }
 .shows__info-day {
-  font-family: AvenirDemi;
+  font-weight: 600;
 }
 .shows__info-buyticket {
   font-size: 0.875rem;
@@ -594,7 +592,7 @@ body {
 .shows .venue {
   font-size: 0.875rem;
   line-height: 1.375rem;
-  font-family: AvenirDemi;
+  font-weight: 600;
   color: #afafaf;
 }
 @media screen and (min-width: 768px) {

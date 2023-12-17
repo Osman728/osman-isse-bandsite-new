@@ -5,7 +5,7 @@
 @use "./mixins" as *;
 
 .shows {
-  font-family: AvenirNormal;
+  font-weight: 400;
   width: 90%;
   @include tablet {
     width: 100%;
@@ -20,7 +20,7 @@
     padding: 1.5rem 1rem 0rem 1rem;
     @include section-header;
     margin: 0;
-    font-family: AvenirDemi;
+    font-weight:600;
     color: $primarycolor-1;
     @include tablet {
       padding: 3rem 2.25rem 2.25rem 2.25rem;
@@ -85,7 +85,7 @@
   &__info-Venus,
   &__info-location {
     @include subheader;
-    font-family: AvenirDemi;
+    font-weight: 600;
     color: $primarycolor-2;
     padding-top: 1rem;
     @include tablet {
@@ -96,11 +96,11 @@
   &__info-Venusname,
   &__info-locationplace {
     @include bodycopy;
-    font-family: AvenirNormal;
+    font-weight: 400;
     color: $primarycolor-1;
   }
   &__info-day {
-    font-family: AvenirDemi;
+    font-weight: 600;
   }
 
   &__info-buyticket {
@@ -165,7 +165,7 @@
   .location,
   .venue {
     @include subheader;
-    font-family: AvenirDemi;
+    font-weight: 600;
     color: $primarycolor-2;
   }
   &__wrapper-dp {
