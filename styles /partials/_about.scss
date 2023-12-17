@@ -15,7 +15,7 @@
     padding: 1.5rem 1rem 1rem 1rem;
     @include section-header;
     margin: 0;
-    font-family: AvenirDemi;
+    font-weight: 600;
     color: $primarycolor-1;
     @include tablet {
       padding: 3rem 2.25rem 2.25rem 2.25rem;
@@ -45,7 +45,7 @@
     @include subheader;
     padding: 0 1rem 1rem 1rem;
     margin: 0;
-    font-family: AvenirDemi;
+    font-weight: 600;
     color: $primarycolor-1;
     @include tablet {
       width: 76%;
@@ -61,7 +61,7 @@
     @include subheader;
     padding: 0 1rem 1rem 1rem;
     margin: 0;
-    font-family: Avenir;
+    font-weight: 600;
     color: $primarycolor-1;
     @include tablet {
       width: 80%;
@@ -78,7 +78,7 @@
     @include subheader;
     padding: 0 1rem 1rem 1rem;
     margin: 0;
-    font-family: AvenirDemi;
+    font-weight: 600;
     color: $primarycolor-1;
     @include tablet {
       width: 80%;
@@ -108,7 +108,7 @@
     @include bodycopy;
     padding: 0 1rem 1rem 1rem;
     margin: 0;
-    font-family: AvenirNormal;
+  
     color: $primarycolor-1;
     @include tablet {
       width: 35.54%;

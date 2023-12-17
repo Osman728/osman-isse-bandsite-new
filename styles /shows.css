@@ -2,20 +2,21 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Avenir";
 }
 
 @font-face {
-  font-family: "AvenirBold";
+  font-family: "Avenir";
   src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../assets/fonts/AvenirNextLTProBold.ttf") format("truetype");
   font-weight: 700;
 }
 @font-face {
-  font-family: "AvenirDemi";
+  font-family: "Avenir";
   src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype"), url("../../assets/fonts/AvenirNextLTProDemi.ttf") format("truetype");
   font-weight: 600;
 }
 @font-face {
-  font-family: "AvenirNormal";
+  font-family: "Avenir";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype"), url("../../assets/fonts/AvenirNextLTPro.ttf") format("truetype");
   font-weight: 400;
 }
@@ -27,13 +28,13 @@ body {
   padding: 1rem 0 0 0;
   font-family: AvenirNormal;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .navbar {
     padding: 1.5rem 0 0 2.25rem;
     flex-direction: row;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .navbar {
     padding: 1.5rem 0 0 5.93rem;
   }
@@ -42,12 +43,12 @@ body {
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .navbar__container-1 {
     margin-right: -2rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .navbar__container-1 {
     margin-right: -3rem;
   }
@@ -57,12 +58,12 @@ body {
   justify-content: space-evenly;
   width: 100%;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .navbar__container-2 {
     width: 50%;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .navbar__container-2 {
     width: 37%;
   }
@@ -70,12 +71,12 @@ body {
 .navbar__button-container {
   width: 50%;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .navbar__button-container {
     width: 17%;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .navbar__button-container {
     width: 12%;
   }
@@ -86,7 +87,7 @@ body {
 .navbar__bio {
   color: #e1e1e1;
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .navbar__bio {
     padding-left: 2rem;
   }
@@ -96,7 +97,7 @@ body {
   justify-content: space-around;
   padding: 0 0 0 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .navbar__list {
     margin: 0.8rem 0;
     padding-inline-start: 0rem;
@@ -108,7 +109,7 @@ body {
   width: 7rem;
   padding-top: 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .navbar__image {
     padding-top: 0.5rem;
     margin-bottom: 1.5rem;
@@ -132,15 +133,14 @@ body {
   color: #fafafa;
   font-size: 0.8125rem;
   line-height: 1.125rem;
-  font-family: AvenirNormal;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__header {
     display: flex;
     align-items: center;
@@ -148,7 +148,7 @@ body {
     padding: 3rem 2.25rem 2.25rem 2.25rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .footer__header {
     padding: 3rem 2.25rem 2.25rem 5.93rem;
     margin: 0 auto;
@@ -158,12 +158,12 @@ body {
 .footer__title {
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: AvenirDemi;
+  font-weight: 600;
   color: #fafafa;
   padding: 1.5rem 1rem 1rem 1rem;
   margin: 0rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__title {
     padding: 0;
     font-size: 2.25rem;
@@ -179,14 +179,14 @@ body {
   min-width: 7.5rem;
   width: 30%;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__socials {
     width: 17%;
     padding: 0 10rem 0 0;
     height: 1.5rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .footer__socials {
     width: 12%;
     padding: 0 0 0 2rem;
@@ -195,7 +195,7 @@ body {
 .footer__social-icon img {
   height: 1.5rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__social-icon img {
     height: 1.5rem;
   }
@@ -203,19 +203,19 @@ body {
 .footer__header-img--tab {
   display: none;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__header-img--tab {
     display: flex;
     height: 1.25rem;
   }
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__header-img {
     padding: 0;
     height: 1.5rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .footer__header-img {
     padding: 2.7rem 0 1.5rem 39.2rem;
   }
@@ -225,7 +225,7 @@ body {
   flex-direction: column;
   padding: 1.5rem 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__content {
     display: flex;
     flex-direction: row;
@@ -235,7 +235,7 @@ body {
     padding: 0 2.25rem 0 2.25rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .footer__content {
     width: 53%;
     padding: 0 26rem 0 0rem;
@@ -246,31 +246,32 @@ body {
 .footer__card {
   padding-bottom: 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__card {
     padding-bottom: 2.25rem;
   }
 }
 .footer__card--agent {
-  font-family: AvenirDemi;
   padding-bottom: 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__card--agent {
     padding-bottom: 2.25rem;
   }
 }
 .footer__card--agent-name {
+  font-weight: 600;
   margin: 0;
 }
 .footer__card--agent-company {
+  font-weight: 600;
   margin: 0;
 }
 .footer__card--location {
-  font-family: AvenirNormal;
+  font-weight: 400;
   padding-bottom: 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__card--location {
     padding-bottom: 2.25rem;
   }
@@ -281,20 +282,20 @@ body {
 .footer__card--email {
   padding-bottom: 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__card--email {
     padding-bottom: 2.25rem;
   }
 }
 .footer__card--email-link {
-  font-family: AvenirNormal;
+  font-weight: 400;
   text-decoration: none;
   color: #fafafa;
 }
 .footer__logo-img {
   height: 1.25rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__logo-img {
     display: none;
   }
@@ -302,22 +303,22 @@ body {
 .footer__logo-img--mobile {
   padding: 1.5rem 1rem 1rem 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__logo-img--mobile {
     display: none;
   }
 }
 .footer__copyright {
   padding: 0 1rem 1rem 1rem;
-  font-family: AvenirNormal;
+  font-weight: 400;
   margin: 0;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__copyright {
     padding: 0 2.25rem 2.25rem 2.25rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .footer__copyright {
     padding: 0 2.25rem 2.25rem 5.93rem;
     margin: 0 auto;
@@ -335,13 +336,13 @@ body {
   align-items: center;
   width: 100%;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .hero {
     height: 29.375rem;
     width: 100%;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .hero {
     height: 75vh;
   }
@@ -356,21 +357,21 @@ body {
   color: #ffffff;
   padding: 0 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .hero__title {
     padding: 3rem 2.25rem 0 2.25rem;
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .hero__title {
     margin: 0 auto;
     max-width: 1280px;
     padding: 3rem 2.25rem 0 5.93rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .hero__container-desktop {
     display: flex;
     width: 74%;
@@ -388,7 +389,7 @@ body {
   color: #ffffff;
   padding: 0 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .hero__title-sub {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -398,13 +399,13 @@ body {
     width: 74%;
   }
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .hero__title-sub__container {
     width: 100%;
     max-width: 31.9rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .hero__title-sub__container {
     padding: 0 0 0 5.93rem;
     width: 48%;
@@ -419,7 +420,7 @@ body {
   margin: 1rem 0;
   height: 6rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .hero__soundcloud {
     padding: 2.25rem 2.25rem 0 2.25rem;
     width: 50%;
@@ -430,12 +431,12 @@ body {
   font-family: AvenirNormal;
   width: 90%;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .shows {
     width: 100%;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .shows {
     display: flex;
     margin: 0 auto;
@@ -450,14 +451,14 @@ body {
   font-family: AvenirDemi;
   color: #323232;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .shows__title {
     padding: 3rem 2.25rem 2.25rem 2.25rem;
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .shows__title {
     padding: 3rem 2.25rem 2.25rem 5.93rem;
   }
@@ -467,7 +468,7 @@ body {
   flex-direction: column;
   margin-bottom: 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .shows__container {
     margin-bottom: 2.5rem;
   }
@@ -492,14 +493,14 @@ body {
 .shows__info.selected {
   background-color: #e1e1e1;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .shows__info {
     display: flex;
     width: 100%;
     align-items: center;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .shows__info {
     width: 161%;
   }
@@ -511,7 +512,7 @@ body {
   color: #afafaf;
   padding-top: 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .shows__info-date, .shows__info-Venus, .shows__info-location {
     display: none;
   }
@@ -543,17 +544,17 @@ body {
   background-color: #000000;
   color: #ffffff;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .shows__info-buyticket {
     padding: 0.56rem 1.5rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .shows__info-buyticket {
     padding: 0.56rem 0 0.56rem 3rem;
   }
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .shows__info-day, .shows__info-Venusname, .shows__info-locationplace, .shows__info-buyticket {
     display: flex;
     width: 25%;
@@ -562,14 +563,14 @@ body {
 .shows__wrapper {
   display: none;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .shows__wrapper {
     display: flex;
     width: 62%;
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .shows__wrapper {
     width: 101%;
   }
@@ -580,7 +581,7 @@ body {
 .shows .location {
   margin-right: 1rem;
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .shows .location {
     margin-right: 2rem;
   }
@@ -596,12 +597,12 @@ body {
   font-family: AvenirDemi;
   color: #afafaf;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .shows__wrapper-dp {
     padding: 0 2.25rem 0 1.5rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .shows__wrapper-dp {
     margin: 3.9375rem 0 0 3.9375rem;
   }

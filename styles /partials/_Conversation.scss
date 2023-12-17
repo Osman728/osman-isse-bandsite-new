@@ -6,7 +6,8 @@
 
 .Conversation {
   width: 100%;
-  font-family: AvenirNormal;
+  
+  font-weight: 400;
   @include desktop {
     margin: 0 auto;
     max-width: 1280px;
@@ -15,7 +16,7 @@
     padding: 1.5rem 1rem 1rem 1rem;
     @include section-header;
     margin: 0;
-    font-family: AvenirDemi;
+    font-weight: 600;
     color: $primarycolor-1;
     @include tablet {
       padding: 3rem 2.25rem 2.25rem 2.25rem;
@@ -78,20 +79,26 @@
   }
   &__name-label {
     @include subheader;
-    font-family: AvenirDemi;
+    font-size: 0.7rem;
+    font-weight: 600;
     margin-bottom: 4px;
     color: $primarycolor-2;
   }
   &__name-input {
+    outline: none;
     height: 2.25rem;
     border-radius: 4px;
     padding-left: 0.75rem;
     margin-bottom: 1rem;
     background-color: $secondarycolor-3;
+    
     @include tablet {
       height: 3rem;
       padding-left: 1rem;
     }
+  }
+  :focus{
+    border-color: $secondarycolor-1 ;
   }
 
   &__comment {
@@ -103,11 +110,13 @@
 
   &__comment-label {
     @include subheader;
-    font-family: AvenirDemi;
+    font-size: 0.7rem;
+    font-weight: 600;
     margin-bottom: 4px;
     color: $primarycolor-2;
   }
   &__comment-text {
+    outline: none;
     @include bodycopy;
     background-color: $secondarycolor-3;
     border-radius: 4px;
@@ -132,7 +141,9 @@
   &__name-input::placeholder,
   &__comment-text::placeholder {
     color: $primarycolor-1;
+    font-weight: 400;
   }
+
   &__button {
     display: flex;
     @include tablet {
@@ -218,8 +229,8 @@
 
   &__info-name {
     @include subheader;
-    font-family: AvenirDemi;
-    color: $secondarycolor-1;
+    font-weight: 600;
+    color: $primarycolor-1;
     margin: 0;
   }
   &__info-date {

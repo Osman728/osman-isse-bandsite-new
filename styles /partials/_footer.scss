@@ -9,7 +9,7 @@
   width: 100%;
   color: $secondarycolor-3;
   @include footercopy;
-  font-family: AvenirNormal;
+ 
 
   @include tablet {
     @include footercopy-tab-desktop;
@@ -29,7 +29,7 @@
   }
   &__title {
     @include section-header;
-    font-family: AvenirDemi;
+    font-weight: 600;
     color: $secondarycolor-3;
     padding: 1.5rem 1rem 1rem 1rem;
     margin: 0rem;
@@ -112,7 +112,7 @@
   }
 
   &__card--agent {
-    font-family: AvenirDemi;
+   
     padding-bottom: 1rem;
     @include tablet {
       padding-bottom: 2.25rem;
@@ -120,15 +120,17 @@
   }
 
   &__card--agent-name {
+    font-weight: 600;
     margin: 0;
   }
 
   &__card--agent-company {
+    font-weight: 600;
     margin: 0;
   }
 
   &__card--location {
-    font-family: AvenirNormal;
+    font-weight: 400;
     padding-bottom: 1rem;
     @include tablet {
       padding-bottom: 2.25rem;
@@ -147,7 +149,7 @@
   }
 
   &__card--email-link {
-    font-family: AvenirNormal;
+    font-weight: 400;
     text-decoration: none;
     color: $secondarycolor-3;
   }
@@ -170,7 +172,7 @@
 
   &__copyright {
     padding: 0 1rem 1rem 1rem;
-    font-family: AvenirNormal;
+    font-weight: 400;
     margin: 0;
     @include tablet {
       padding: 0 2.25rem 2.25rem 2.25rem;

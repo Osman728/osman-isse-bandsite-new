@@ -29,7 +29,7 @@
 
   &__title {
     @include section-header;
-    font-family: AvenirDemi;
+    font-weight: 600;
     color: $primarycolor-3;
     padding: 0 1rem;
     @include tablet {

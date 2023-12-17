@@ -2,20 +2,21 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Avenir";
 }
 
 @font-face {
-  font-family: "AvenirBold";
+  font-family: "Avenir";
   src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../assets/fonts/AvenirNextLTProBold.ttf") format("truetype");
   font-weight: 700;
 }
 @font-face {
-  font-family: "AvenirDemi";
+  font-family: "Avenir";
   src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype"), url("../../assets/fonts/AvenirNextLTProDemi.ttf") format("truetype");
   font-weight: 600;
 }
 @font-face {
-  font-family: "AvenirNormal";
+  font-family: "Avenir";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype"), url("../../assets/fonts/AvenirNextLTPro.ttf") format("truetype");
   font-weight: 400;
 }
@@ -25,15 +26,14 @@ body {
   background: #323232;
   color: #ffffff;
   padding: 1rem 0 0 0;
-  font-family: AvenirNormal;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .navbar {
     padding: 1.5rem 0 0 1.5rem;
     flex-direction: row;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .navbar {
     padding: 1.5rem 0 0 5.93rem;
   }
@@ -42,12 +42,12 @@ body {
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .navbar__container-1 {
     margin-right: 4rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .navbar__container-1 {
     margin-right: 2rem;
   }
@@ -57,7 +57,7 @@ body {
   justify-content: space-evenly;
   width: 100%;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .navbar__container-2 {
     width: 20%;
   }
@@ -65,12 +65,12 @@ body {
 .navbar__button-container {
   width: 50%;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .navbar__button-container {
     width: 50%;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .navbar__button-container {
     width: 32%;
   }
@@ -81,12 +81,12 @@ body {
 .navbar__show {
   color: #e1e1e1;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .navbar__show {
     padding-left: 3rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .navbar__show {
     padding-left: 2rem;
   }
@@ -96,7 +96,7 @@ body {
   justify-content: space-around;
   padding: 0 0 0 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .navbar__list {
     margin: 0.8rem 0;
     padding-inline-start: 0rem;
@@ -108,7 +108,7 @@ body {
   width: 7rem;
   padding-top: 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .navbar__image {
     padding-top: 0.5rem;
     margin-bottom: 1.5rem;
@@ -135,12 +135,12 @@ body {
   display: flex;
   align-items: center;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .hero {
     height: 29.375rem;
   }
 }
-@media screen and (min-width: 80rem) and (min-width: 80rem) {
+@media screen and (min-width: 1280px) and (min-width: 1280px) {
   .hero {
     height: 75vh;
   }
@@ -148,18 +148,18 @@ body {
 .hero__title {
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: AvenirDemi;
+  font-weight: 600;
   color: #ffffff;
   padding: 0 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .hero__title {
     padding: 0 2.25rem;
     font-size: 3.75rem;
     line-height: 4.25rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .hero__title {
     padding: 0 5.93rem;
   }
@@ -168,7 +168,7 @@ body {
 .about {
   width: 100%;
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .about {
     margin: 0 auto;
     max-width: 1280px;
@@ -179,17 +179,17 @@ body {
   font-size: 1.5rem;
   line-height: 2rem;
   margin: 0;
-  font-family: AvenirDemi;
+  font-weight: 600;
   color: #323232;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .about__title {
     padding: 3rem 2.25rem 2.25rem 2.25rem;
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .about__title {
     padding: 3rem 2.25rem 2.25rem 5.93rem;
   }
@@ -199,13 +199,13 @@ body {
   padding: 0 1rem 1rem 1rem;
   margin: 0;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .about__image {
     width: 72.6%;
     padding: 0 2.25rem 2.25rem 5.7rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .about__image {
     width: 70.65%;
     padding: 0 0 2.25rem 10.5rem;
@@ -216,10 +216,10 @@ body {
   line-height: 1.375rem;
   padding: 0 1rem 1rem 1rem;
   margin: 0;
-  font-family: AvenirDemi;
+  font-weight: 600;
   color: #323232;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .about__quote {
     width: 76%;
     padding: 0 2.25rem 2.25rem 5.7rem;
@@ -227,7 +227,7 @@ body {
     line-height: 2rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .about__quote {
     width: 50%;
     padding: 0 0 1.25rem 10.5rem;
@@ -238,10 +238,10 @@ body {
   line-height: 1.375rem;
   padding: 0 1rem 1rem 1rem;
   margin: 0;
-  font-family: Avenir;
+  font-weight: 600;
   color: #323232;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .about__author {
     width: 80%;
     padding: 0rem 2.25rem 2.25rem 5.7rem;
@@ -249,7 +249,7 @@ body {
     line-height: 2rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .about__author {
     width: 56%;
     padding: 0 0 1.25rem 10.5rem;
@@ -260,10 +260,10 @@ body {
   line-height: 1.375rem;
   padding: 0 1rem 1rem 1rem;
   margin: 0;
-  font-family: AvenirDemi;
+  font-weight: 600;
   color: #323232;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .about__name {
     width: 80%;
     padding: 0rem 2.25rem 2.25rem 5.7rem;
@@ -271,20 +271,20 @@ body {
     line-height: 2rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .about__name {
     width: 56%;
     padding: 0 0 1.25rem 10.5rem;
   }
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .about__container {
     display: flex;
     gap: 2.7rem;
     padding-left: 4.7rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .about__container {
     padding-left: 8rem;
   }
@@ -294,10 +294,9 @@ body {
   line-height: 1.125rem;
   padding: 0 1rem 1rem 1rem;
   margin: 0;
-  font-family: AvenirNormal;
   color: #323232;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .about__container--text {
     width: 35.54%;
     padding-bottom: 2.25rem;
@@ -305,7 +304,7 @@ body {
     line-height: 1.375rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .about__container--text {
     width: 36.2%;
     padding: 0 0 2.25rem 2.4rem;
@@ -325,17 +324,17 @@ body {
   margin: 0;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: AvenirDemi;
+  font-weight: 600;
   color: #323232;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .gallery__title {
     padding: 3rem 2.25rem 2.25rem 2.25rem;
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .gallery__title {
     padding: 3rem 2.25rem 2.25rem 5.93rem;
   }
@@ -344,7 +343,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .gallery__photos {
     display: flex;
     flex-direction: row;
@@ -354,7 +353,7 @@ body {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .gallery__photos {
     padding: 0 0 0 5.93rem;
     width: auto;
@@ -363,13 +362,13 @@ body {
 .gallery__photos--item {
   padding: 0 1rem 1rem 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .gallery__photos--item {
     padding: 0 2.25rem 2.25rem 0;
     width: 27.6%;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .gallery__photos--item {
     width: 29.6%;
   }
@@ -381,15 +380,14 @@ body {
   color: #fafafa;
   font-size: 0.8125rem;
   line-height: 1.125rem;
-  font-family: AvenirNormal;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__header {
     display: flex;
     align-items: center;
@@ -397,7 +395,7 @@ body {
     padding: 3rem 2.25rem 2.25rem 2.25rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .footer__header {
     padding: 3rem 2.25rem 2.25rem 5.93rem;
     margin: 0 auto;
@@ -407,12 +405,12 @@ body {
 .footer__title {
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: AvenirDemi;
+  font-weight: 600;
   color: #fafafa;
   padding: 1.5rem 1rem 1rem 1rem;
   margin: 0rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__title {
     padding: 0;
     font-size: 2.25rem;
@@ -428,14 +426,14 @@ body {
   min-width: 7.5rem;
   width: 30%;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__socials {
     width: 17%;
     padding: 0 10rem 0 0;
     height: 1.5rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .footer__socials {
     width: 12%;
     padding: 0 0 0 2rem;
@@ -444,7 +442,7 @@ body {
 .footer__social-icon img {
   height: 1.5rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__social-icon img {
     height: 1.5rem;
   }
@@ -452,19 +450,19 @@ body {
 .footer__header-img--tab {
   display: none;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__header-img--tab {
     display: flex;
     height: 1.25rem;
   }
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__header-img {
     padding: 0;
     height: 1.5rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .footer__header-img {
     padding: 2.7rem 0 1.5rem 39.2rem;
   }
@@ -474,7 +472,7 @@ body {
   flex-direction: column;
   padding: 1.5rem 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__content {
     display: flex;
     flex-direction: row;
@@ -484,7 +482,7 @@ body {
     padding: 0 2.25rem 0 2.25rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .footer__content {
     width: 53%;
     padding: 0 26rem 0 0rem;
@@ -495,31 +493,32 @@ body {
 .footer__card {
   padding-bottom: 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__card {
     padding-bottom: 2.25rem;
   }
 }
 .footer__card--agent {
-  font-family: AvenirDemi;
   padding-bottom: 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__card--agent {
     padding-bottom: 2.25rem;
   }
 }
 .footer__card--agent-name {
+  font-weight: 600;
   margin: 0;
 }
 .footer__card--agent-company {
+  font-weight: 600;
   margin: 0;
 }
 .footer__card--location {
-  font-family: AvenirNormal;
+  font-weight: 400;
   padding-bottom: 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__card--location {
     padding-bottom: 2.25rem;
   }
@@ -530,20 +529,20 @@ body {
 .footer__card--email {
   padding-bottom: 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__card--email {
     padding-bottom: 2.25rem;
   }
 }
 .footer__card--email-link {
-  font-family: AvenirNormal;
+  font-weight: 400;
   text-decoration: none;
   color: #fafafa;
 }
 .footer__logo-img {
   height: 1.25rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__logo-img {
     display: none;
   }
@@ -551,22 +550,22 @@ body {
 .footer__logo-img--mobile {
   padding: 1.5rem 1rem 1rem 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__logo-img--mobile {
     display: none;
   }
 }
 .footer__copyright {
   padding: 0 1rem 1rem 1rem;
-  font-family: AvenirNormal;
+  font-weight: 400;
   margin: 0;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .footer__copyright {
     padding: 0 2.25rem 2.25rem 2.25rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .footer__copyright {
     padding: 0 2.25rem 2.25rem 5.93rem;
     margin: 0 auto;
@@ -576,9 +575,9 @@ body {
 
 .Conversation {
   width: 100%;
-  font-family: AvenirNormal;
+  font-weight: 400;
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .Conversation {
     margin: 0 auto;
     max-width: 1280px;
@@ -589,17 +588,17 @@ body {
   font-size: 1.5rem;
   line-height: 2rem;
   margin: 0;
-  font-family: AvenirDemi;
+  font-weight: 600;
   color: #323232;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .Conversation__title {
     padding: 3rem 2.25rem 2.25rem 2.25rem;
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .Conversation__title {
     padding: 3rem 2.25rem 2.25rem 5.93rem;
   }
@@ -610,13 +609,13 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .Conversation__container {
     justify-content: center;
     width: 95%;
   }
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .Conversation__profile {
     display: flex;
     width: 17%;
@@ -632,7 +631,7 @@ body {
   width: 36px;
   height: 36px;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .Conversation__profile-image {
     width: 48px;
     height: 48px;
@@ -643,13 +642,13 @@ body {
   flex-direction: column;
   width: 85%;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .Conversation__form {
     width: 73%;
     margin-right: 3rem;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .Conversation__form {
     width: 45%;
     margin-right: 18rem;
@@ -663,22 +662,27 @@ body {
 .Conversation__name-label {
   font-size: 0.875rem;
   line-height: 1.375rem;
-  font-family: AvenirDemi;
+  font-size: 0.7rem;
+  font-weight: 600;
   margin-bottom: 4px;
   color: #afafaf;
 }
 .Conversation__name-input {
+  outline: none;
   height: 2.25rem;
   border-radius: 4px;
   padding-left: 0.75rem;
   margin-bottom: 1rem;
   background-color: #fafafa;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .Conversation__name-input {
     height: 3rem;
     padding-left: 1rem;
   }
+}
+.Conversation :focus {
+  border-color: #000000;
 }
 .Conversation__comment {
   display: flex;
@@ -689,11 +693,13 @@ body {
 .Conversation__comment-label {
   font-size: 0.875rem;
   line-height: 1.375rem;
-  font-family: AvenirDemi;
+  font-size: 0.7rem;
+  font-weight: 600;
   margin-bottom: 4px;
   color: #afafaf;
 }
 .Conversation__comment-text {
+  outline: none;
   font-size: 0.8125rem;
   line-height: 1.125rem;
   background-color: #fafafa;
@@ -704,7 +710,7 @@ body {
   resize: none;
   color: #323232;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .Conversation__comment-text {
     padding: 1rem;
   }
@@ -717,14 +723,16 @@ body {
 }
 .Conversation__name-input::-moz-placeholder, .Conversation__comment-text::-moz-placeholder {
   color: #323232;
+  font-weight: 400;
 }
 .Conversation__name-input::placeholder, .Conversation__comment-text::placeholder {
   color: #323232;
+  font-weight: 400;
 }
 .Conversation__button {
   display: flex;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .Conversation__button {
     height: 3.6rem;
     width: 100%;
@@ -748,7 +756,7 @@ body {
   background-color: #000000;
   color: #ffffff;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .Conversation__button-sub {
     width: 33%;
     height: 3.2rem;
@@ -760,14 +768,14 @@ body {
 .comment {
   padding: 1.5rem 1rem 1rem 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .comment {
     width: 77.9%;
     margin-left: 5.6rem;
     padding: 0 0 2.25rem 0;
   }
 }
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 1280px) {
   .comment {
     width: 47.9%;
     margin-left: 15.4rem;
@@ -780,7 +788,7 @@ body {
   border-top: 0.5px solid #e1e1e1;
   border-bottom: 0.5px solid #e1e1e1;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .comment__section {
     padding: 1.5rem 0 2.25rem 0;
   }
@@ -794,7 +802,7 @@ body {
   border-radius: 50%;
   background-color: #e1e1e1;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .comment__avartar-img {
     width: 48px;
     height: 48px;
@@ -814,8 +822,8 @@ body {
 .comment__info-name {
   font-size: 0.875rem;
   line-height: 1.375rem;
-  font-family: AvenirDemi;
-  color: #000000;
+  font-weight: 600;
+  color: #323232;
   margin: 0;
 }
 .comment__info-date {
@@ -827,7 +835,7 @@ body {
 .comment__usertext {
   padding-top: 1rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .comment__usertext {
     padding-top: 0.5rem;
   }
@@ -837,7 +845,7 @@ body {
   line-height: 1.125rem;
   margin: 0;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .comment__usertext-post {
     font-size: 0.875rem;
     line-height: 1.375rem;
