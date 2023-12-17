@@ -1,4 +1,4 @@
-const myApiKey = "?api_key=c9eb1031-2318-49df-a6fd-29308f55f003";
+const myApiKey = "?api_key=b41479c8-a07e-4784-b612-7ac99e7b9a13";
 class BandSiteApi {
   constructor(key) {
     this.key = key;

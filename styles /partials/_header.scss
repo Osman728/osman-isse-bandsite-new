@@ -9,14 +9,13 @@
   background: $primarycolor-1;
   color: $primarycolor-3;
   padding: 1rem 0 0 0;
- 
+
   @include tablet {
     padding: 1.5rem 0 0 1.5rem;
     flex-direction: row;
   }
   @include desktop {
     padding: 1.5rem 0 0 5.93rem;
-   
   }
 
   &__container-1 {
@@ -27,7 +26,6 @@
     }
     @include desktop {
       margin-right: 2rem;
-      
     }
   }
   &__container-2 {
@@ -61,7 +59,7 @@
       padding-left: 2rem;
     }
   }
-  
+
   &__list {
     display: flex;
     justify-content: space-around;

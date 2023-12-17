@@ -15,16 +15,13 @@
   height: 17.5rem;
   display: flex;
   align-items: center;
-  
+
   @include tablet {
-   
     height: 29.375rem;
   }
-  @include desktop {
-    @include desktop {
-      height: 75vh;
 
-    }
+  @include desktop {
+    height: 75vh;
   }
 
   &__title {
@@ -38,8 +35,6 @@
     }
     @include desktop {
       padding: 0 5.93rem;
-
     }
-   
   }
 }

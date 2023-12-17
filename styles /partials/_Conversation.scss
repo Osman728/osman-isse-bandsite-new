@@ -6,7 +6,7 @@
 
 .Conversation {
   width: 100%;
-  
+
   font-weight: 400;
   @include desktop {
     margin: 0 auto;
@@ -24,8 +24,6 @@
     }
     @include desktop {
       padding: 3rem 2.25rem 2.25rem 5.93rem;
-      
-    
     }
   }
   &__container {
@@ -91,14 +89,14 @@
     padding-left: 0.75rem;
     margin-bottom: 1rem;
     background-color: $secondarycolor-3;
-    
+
     @include tablet {
       height: 3rem;
       padding-left: 1rem;
     }
   }
-  :focus{
-    border-color: $secondarycolor-1 ;
+  :focus {
+    border-color: $secondarycolor-1;
   }
 
   &__comment {

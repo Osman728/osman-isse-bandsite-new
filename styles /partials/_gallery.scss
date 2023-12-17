@@ -7,11 +7,11 @@
 .gallery {
   width: 100%;
   background-color: $secondarycolor-3;
-  
-&__container{
-  margin: 0 auto;
+
+  &__container {
+    margin: 0 auto;
     max-width: 1280px;
-}
+  }
   &__title {
     padding: 1.5rem 1rem 1rem 1rem;
     margin: 0;
@@ -24,7 +24,6 @@
     }
     @include desktop {
       padding: 3rem 2.25rem 2.25rem 5.93rem;
-      
     }
   }
   &__photos {
@@ -41,8 +40,6 @@
     @include desktop {
       padding: 0 0 0 5.93rem;
       width: auto;
-      
-    
     }
   }
   &__photos--item {

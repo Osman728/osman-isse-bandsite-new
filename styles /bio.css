@@ -140,7 +140,7 @@ body {
     height: 29.375rem;
   }
 }
-@media screen and (min-width: 1280px) and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .hero {
     height: 75vh;
   }
